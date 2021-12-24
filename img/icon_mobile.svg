@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icon_mobile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon_mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12.7058546,2.84214275 C7.28877526,2.91527817 2.91507623,7.28883676 2.84176686,12.7059138 L2.00146264,74.7988299 C2.00060932,74.8618844 2.0006081,74.9249476 2.00145896,74.9880022 L2.84221749,137.293778 C2.91531766,142.710984 7.28904127,147.084766 12.7062465,147.157937 L74.9394505,147.99854 C75.0025049,147.999391 75.065568,147.999391 75.1286224,147.998539 L137.294216,147.158076 C142.711259,147.084839 147.084861,142.711252 147.158117,137.29421 L147.998538,75.14747 C147.999391,75.0844156 147.999392,75.0213525 147.99854,74.958298 L147.157893,12.7059055 C147.084741,7.28881129 142.711146,2.91511893 137.294053,2.84184649 L75.1637255,2.00146199 C75.100671,2.00060911 75.0376079,2.00060831 74.9745534,2.0014596 L12.7058546,2.84214275 Z" id="Rectangle" stroke="#979797" stroke-width="4"></path>
+        <g id="Group" transform="translate(40.900000, 13.646341)">
+            <rect id="Rectangle" stroke="#979797" stroke-width="4" x="2.1" y="2.35365854" width="63" height="117" rx="8"></rect>
+            <line x1="3.19253731" y1="19.5121951" x2="64.6887231" y2="19.7926829" id="Line" stroke="#979797" stroke-width="4"></line>
+            <line x1="3.19253731" y1="99.5121951" x2="64.6887231" y2="99.7926829" id="Line-Copy" stroke="#979797" stroke-width="4"></line>
+            <rect id="Rectangle" fill="#979797" x="24.1" y="10.3536585" width="20" height="4" rx="2"></rect>
+            <ellipse id="Oval" fill="#979797" cx="34.1" cy="109.853659" rx="5" ry="4.5"></ellipse>
+            <rect id="Rectangle" fill="#979797" x="38.1" y="89.3536585" width="6" height="4" rx="2"></rect>
+            <rect id="Rectangle-Copy-2" fill="#979797" x="45.1" y="89.3536585" width="6" height="4" rx="2"></rect>
+            <rect id="Rectangle-Copy-3" fill="#979797" x="53.1" y="89.3536585" width="6" height="4" rx="2"></rect>
+        </g>
+    </g>
+</svg>
