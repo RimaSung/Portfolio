@@ -1,14 +1,15 @@
 /*
+H1 32px 1.77rem
+H2 
+P 18px 1rem
+Description 16px 0.88rem
 font120  7.5rem;
-font30 1.875rem;
+font30 1.66rem;
 font24 1.5rem;
 font20 1.25rem;
-font16 1rem;
-font14 0.875rem;
 font12 0.75rem;
 */
 html {
-    font-size: 16px;
     image-rendering: -webkit-optimize-contrast;
 }
 
@@ -37,7 +38,33 @@ img {
     position: relative;
 }
 
+.divider {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid var(--gray);
+}
+
 /*menu*/
+.menu {
+    position: relative;
+    z-index: 111;
+}
+
+.menu .logo {
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#fixedbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.85);
+}
 
 .fixed-header li a,
 .banner li a {
@@ -65,7 +92,6 @@ img {
 
 nav {
     z-index: 111;
-    padding-top: 1rem;
 }
 
 .fixed {
@@ -75,27 +101,18 @@ nav {
     background: rgba(255, 255, 255, 0.6);
 }
 
-nav ul {
-    text-align: right;
-
-}
-
-nav > ul > li {
-    font-size: 0.75rem;
-    margin-right: 30px;
+.nav a {
+    font-size: 0.88rem;
     display: inline-block;
-    color: #252525;
-    position: relative;
+    line-height: 3;
+    padding: 0 1rem;
 }
 
 nav li:last-child {
     margin-right: 0;
 }
 
-nav {
-    position: relative;
-}
-
+/*
 nav li.uiux .submenu {
     position: absolute;
     left: -10px;
@@ -106,7 +123,7 @@ nav li.uiux .submenu {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
     opacity: 100;
     visibility: hidden;
-    /* display: block; */
+    display: block;
     text-align: left;
     -webkit-transition: 0.6s;
     -moz-transition: 0.6s;
@@ -127,6 +144,14 @@ nav li.uiux:hover .submenu {
     width: 100%;
     padding: 15px 10px;
     display: block;
+}
+*/
+/*menu for mobile*/
+.menu_m .logo {
+    width: 60px;
+    position: fixed;
+    left: 16px;
+    top: 12px;
 }
 
 .menubox_m.open {
@@ -157,7 +182,7 @@ nav li.uiux:hover .submenu {
 }
 
 .menu_btn.active .bottom {
-    top: 24px;
+    top: 21px;
     transform: rotate(-45deg);
     transform-origin: left bottom;
 }
@@ -219,7 +244,7 @@ nav .menubox_m > ul > li:last-child {
     top: 15px;
     right: 15px;
     height: 30px;
-    width: 35px;
+    width: 30px;
     cursor: pointer;
     z-index: 100;
     -webkit-transition: opacity .25s ease;
@@ -253,7 +278,11 @@ nav .menubox_m > ul > li:last-child {
 }
 
 @media (max-width: 576px) {
-    .menu {
+    body {
+        padding-top: 4rem;
+    }
+
+    #navigation {
         display: none;
     }
 
@@ -263,18 +292,10 @@ nav .menubox_m > ul > li:last-child {
 }
 
 /*banner*/
-.bannerbox {
-    margin-top: 3rem;
-    margin-bottom: 8rem;
-    position: relative;
-    margin-top: 3rem;
-}
-
 .indexbanner .bannerbox .text {
-    line-height: 1.2;
-    font-size: 3.125rem;
+    line-height: 1.5;
+    font-size: 1.66rem;
 }
-
 
 .indexbanner .bannerbox .text2 {
     margin: 24px 0;
@@ -286,14 +307,6 @@ nav .menubox_m > ul > li:last-child {
 
 .bannerbox .about .txt {
     font-size: 0.875rem;
-}
-
-.container .logo {
-    width: 120px;
-    position: absolute;
-    top: -5%;
-    left: -5%;
-    z-index: 1;
 }
 
 .bannerbox .normalBtn {
@@ -343,11 +356,12 @@ nav .menubox_m > ul > li:last-child {
     font-size: 0.75rem;
 }
 
+/*
 .en {
-    font-family: "Hiragino Mincho ProN";
     color: var(--dark);
     line-height: 1;
 }
+*/
 
 .container {
     position: relative;
@@ -389,8 +403,6 @@ footer .linkedin a {
 }
 
 /*about_content*/
-.aboutpicbox {}
-
 .aboutpic .logo {
     width: 120px;
     position: absolute;
@@ -418,7 +430,7 @@ footer .linkedin a {
 }
 
 .work_title {
-    font-size: 1.875rem;
+    font-size: 1.66rem;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -665,21 +677,6 @@ footer .linkedin a {
     color: #ffffff;
 }
 
-/*article*/
-.article .row.en {
-    margin-bottom: 60px;
-    color: #606060;
-}
-
-.article .row {
-    margin-bottom: 100px;
-}
-
-#intro > div {
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
 /*各專案顏色設定----開始*/
 .article.urcosme .txt span {
     background-color: #E5C0C9;
@@ -718,27 +715,24 @@ footer .linkedin a {
 }
 
 /*各專案顏色設定----結束*/
-.article .bannerbox {
-    margin-bottom: 80px;
+/*article*/
+
+.article .list {
+    list-style: circle;
 }
 
 .article .title {
     font-size: 1.5rem;
-    font-weight: normal;
-    margin-bottom: 20px;
+    font-weight: bold;
     width: 100%;
 }
 
-.article .txt {
-    line-height: 1.8;
+.article .subtitle {
+    font-weight: bold;
 }
 
 .article .date {
     text-align: right;
-}
-
-.article .list {
-    padding-top: 10px
 }
 
 .article .list ul {
@@ -746,14 +740,39 @@ footer .linkedin a {
     padding-left: 0;
 }
 
-.article .list li {
-    margin-bottom: 20px;
+.pro_name h1 {
+    font-weight: bold;
+    font-size: 1.77rem;
 }
 
+.img_description {
+    font-size: 0.9rem;
+    color: #828282;
+}
 
-.pro_name {
-    font-size: 1.875rem;
-    margin-bottom: 1.25rem;
+.img_description:before {
+    background-image: url('../img/Icon_arrow_up.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    content: "";
+
+}
+
+/*Solutions*/
+#Solutions .item {
+    font-size: 1rem;
+}
+
+/*Goals*/
+#Goals .item {
+    font-size: 1rem;
+}
+
+#Goals .item img {
+    width: 44px;
 }
 
 /*下一頁設定---開始*/
@@ -1024,9 +1043,6 @@ footer .linkedin a {
 }
 
 @media (max-width: 576px) {
-    html {
-        font-size: 14px;
-    }
 
     .mainpic {
         height: 25rem;
@@ -1036,8 +1052,38 @@ footer .linkedin a {
         font-size: 1.5rem;
     }
 
-    .article .row.en {
-        font-size: 0.875rem;
+
+}
+
+@media screen and (min-width: 544px) and (max-width: 767.9px) {
+
+    .drupal,
+    .profile {
+        order: 2;
+    }
+
+    .mt-6 {
+        margin-top: 1rem !important;
+    }
+
+    .mb-7 {
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 543.9px) {
+
+    .drupal,
+    .profile {
+        order: 2;
+    }
+
+    .mt-6 {
+        margin-top: 1rem !important;
+    }
+
+    .mb-7 {
+        margin-bottom: 1rem !important;
     }
 }
 
@@ -1065,7 +1111,7 @@ footer .linkedin a {
     position: fixed;
     top: 20%;
     left: 0px;
-    width: 100%;
+    width: 20%;
 }
 
 .fixed-sidemenu li,
@@ -1096,11 +1142,7 @@ footer .linkedin a {
     bottom: 0px;
 }
 
-@media (min-width: 375px) {
-    .container .logo {
-        width: 80px;
-    }
-}
+@media (min-width: 375px) {}
 
 .test {
     width: 200px;

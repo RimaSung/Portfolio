@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>Rima Design Works</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/grid/">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="img/Icon/s_icon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="js/jquery-1.4.3.js" type="text/javascript"></script>
+    <!--    slider-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+            var scrolltop = $(this).scrollTop();
+            var $nav = $("#navigation");
+
+            if (scrolltop >= $nav.offset().top + $nav.height()) {
+                $('#fixedbar').fadeIn(250);
+            } else {
+                $('#fixedbar').fadeOut(250);
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="navigation" class="container py-4">
+        <div class="menu navbar-right">
+            <a href="index.html" class="logo"><img src="img/Icon/rimalogo.svg" alt=""></a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/file/d/1SVQeffnbI33f-E6iUg6Xea2oYGbI-g3v/view?usp=sharing" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="menu_m">
+        <a href="index.html" class="logo"><img src="img/Icon/rimalogo.svg" alt=""></a>
+        <div class="menubox_m">
+            <ul>
+                <li><a class="nav-link" href="index.html">Projects</a></li>
+                <li><a class="nav-link" href="https://drive.google.com/file/d/1SVQeffnbI33f-E6iUg6Xea2oYGbI-g3v/view?usp=sharing" target="_blank">Resume</a></li>
+            </ul>
+        </div>
+        <div class="menu_btn">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+    </nav>
+    <div class="container article">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <img src="img/wvt-banner.gif">
+            </div>
+        </div>
+    </div>
+    <article class="article wvt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 sidemenu">
+                    <ul>
+                        <li><a href="#Intro">Intro</a></li>
+                        <li><a href="#Overview">Overview</a></li>
+                        <li><a href="#Goals">Project Goals</a></li>
+                        <li><a href="#Timeline">Phase Timeline</a></li>
+                        <li><a href="#Methods">Research Methods</a></li>
+                        <li><a href="#Research">User Research</a></li>
+                        <li><a href="#Solutions">Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 bannerblock"></div>
+                <div class="col-md-9">
+                    <div class="row" id="Intro">
+                        <div class="col-md-12 pro_name">
+                            <h1>Up Study</h1>
+                        </div>
+                        <div class="col-md-6 device">RWD Website</div>
+                        <div class="col-md-6 date">2019-2020</div>
+                        <div class="col-md-12 mb-3 team">Product Manager & Designer</div>
+                        <div class="col-md-12">
+                            <div class="divider mb-5"></div>
+                        </div>
+                    </div>
+                    <div class="row mb-5" id="Overview">
+                        <div class="col-md-12 mb-2 title">Overview</div>
+                        <div class="col-md-12 mb-2 txt ">
+                            Up-study is a consulting center that provides expert opinions, analysis, and recommendations to applicants for applying for higher education degrees.
+                        </div>
+                    </div>
+                    <div class="row mb-5" id="Goals">
+                        <div class="col-md-12">
+                            <div class="title mb-2">Project Goals</div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row mb-2">
+                                <div class="item col-md-4">
+                                    <div class="icon"><img src="img/Icon_Num1.svg" alt=""></div>
+                                    Improve the average time on Page.
+                                </div>
+                                <div class="item col-md-4">
+                                    <div class="icon"><img src="img/Icon_Num2.svg" alt=""></div>
+                                    Convert users to customers.
+                                </div>
+                                <div class="item col-md-4">
+                                    <div class="icon"><img src="img/Icon_Num3.svg" alt=""></div>
+                                    Develop new design guide.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5" id="Timeline">
+                        <div class="col-md-12 mb-2 title">Understand Audiences</div>
+                        <div class="col-md-6 mb-4 txt">
+                            In order to identify the current demand for our product to design appropriate strategies to outshine opponents, a competitive product analysis was conducted.<br><br>
+                            According to the analysis result, most consulting centers offer two services <I><b>Study Tour</b> </I>and <I><b>Study Abroad</b></I>.
+                        </div>
+                        <div class="col-md-6 mb-4 txt ">
+                            <img src="img/up_competitive.jpg" alt="">
+                        </div>
+                        <div class="col-md-12 mb-2 txt">
+                            Moreover, we noticed that compared with the Study Tour track, people looking to pursue Studying Abroad make elaborate preparation when it comes to TOEFL/IELTS testing, application materials, or allocating funds in order to study abroad.
+                        </div>
+                        <div class="col-md-12 mb-2 txt">
+                            Furthermore, In this niche market, more than 80% of consulting centers did not cater to people's needs on their website. When people focus on the school research and selection process, they gather relevant information such as academic quality, teaching style, and school life on social media, friends, or consulting centers.
+                        </div>
+                        <div class="col-md-12 mb-2 txt">
+                            Therefore, Up-study website is designed as an online encyclopedia for helping people to gather information for preparing to study abroad.
+                        </div>
+                    </div>
+                    <div class="row mb-2" id="Solutions">
+                        <div class="col-md-12 mb-2 title">Solutions</div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6 mt-6">
+                            <div class="subtitle mb-2">Optimize Information Architecture</div>
+                            <div class="txt">I designed some pages to have a sidebar on the left. It helped users to navigate the site more efficiently and allowed users to further interact with the site. The content area takes up to 70% of the design; therefore, people would not be distracted by other elements. This caused fewer conversions.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-7">
+                            <img src="img/up_review1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6 mb-7">
+                            <img src="img/up_review2.png" alt="">
+                        </div>
+                        <div class="col-md-6 mt-6">
+                            <div class="subtitle mb-2">Easy to contact to</div>
+                            <div class="txt">At the bottom of every page, I designed content with a contact form. Users can easily book a consulting service on the site. According to the data, after users read school profiles on the site, they filled in their contact information in the form. Some people came to the Up-study consulting center after they visited the site and trusted us more as a result of the website. The page for overseas school profile. The sidebar provides users relevant information about the school on other pages.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-6">
+                            <img src="img/up_review3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--next project-->
+    <article>
+        <div class="row nextarticle">
+            <div class="col-md-4">
+                <a href="health.html" class="normalBtn">
+                    <div class="moreBtn left">
+                        <div class="more_line"></div>
+                        <div class="more">行動健保快易通登入流程、介面優化</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 right">
+                <a href="urcosme.html" class="normalBtn">
+                    <div class="moreBtn">
+                        <div class="more">UrCosme網站</div>
+                        <div class="more_line"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </article>
+    <!--    footer-->
+    <footer>
+        <div class="mobile contact">
+            <a href="tel:+886-918330592">
+                <img src="img/icon_mobile.svg">
+            </a>
+        </div>
+        <div class="email contact">
+            <a href="mailto: future830413@gmail.com">
+                <img src="img/icon_email.svg">
+            </a>
+        </div>
+        <div class="linkedin contact">
+            <a href="https://www.linkedin.com/in/ya-ming-sung-97a79a17b/" target="_blank">
+                <img src="img/icon_linkedin.svg">
+            </a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+        //        slider
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            effect: 'fade',
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+
+    </script>
+    <script type="text/javascript">
+        var winW = $(window).width();
+        console.log(winW);
+        //找出左側菜單位置
+        function residemenu() {
+            var X = $('.bannerblock').offset().left;
+            $('.sidemenu').css("left", X);
+        };
+        //手機版menu
+        $('.menu_btn').click(function() {
+            $(this).toggleClass('active');
+            $('.menubox_m').toggleClass('open');
+            console.log('click');
+        });
+        $(window).resize(function() {
+            residemenu();
+            if (winW <= 450) {
+                console.log("！");
+                $('#uiuxmenu .submenu').css('display', 'none');
+            }
+            console.log("視窗發生改變了喲！");
+        });
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 600) {
+                $('.sidemenu').addClass('fixed-sidemenu');
+                $('.sidemenu div').addClass('visible-title');
+                $('.bannerblock').css("display", "block");
+                residemenu();
+            } else {
+                $('.sidemenu').removeClass('fixed-sidemenu');
+                $('.sidemenu div').removeClass('visible-title');
+                $('.bannerblock').css("display", "none");
+                $('.sidemenu').css("left", 0);
+            }
+        });
+
+        var num = 50;
+        //        $(window).bind('scroll', function() {
+        //            if ($(window).scrollTop() > num) {
+        //                $('.menu').addClass('fixed');
+        //            } else {
+        //                $('.menu').removeClass('fixed');
+        //            }
+        //        });
+
+    </script>
+</body>
+
+</html>

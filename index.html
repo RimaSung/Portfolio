@@ -38,81 +38,61 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body class="py-4">
-    <nav class="menu">
-        <ul class="en container">
-            <li><a href="index.html">Home</a></li>
-            <li class="uiux">
-                <a href="">UI/UX</a>
-                <ul class="submenu">
-                    <li><a href="upstudy.html">上學院</a></li>
-                    <li><a href="erp.html">非凡.自助家ERP管理系統</a></li>
-                    <li><a href="urcosme.html">UrCosme</a></li>
-                    <li><a href="lab.html">生態實驗室</a></li>
-                    <li><a href="health.html">健保快易通</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+<body>
+    <div id="navigation" class="container py-4">
+        <div class="menu navbar-right">
+            <a href="index.html" class="logo"><img src="img/Icon/rimalogo.svg" alt=""></a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/file/d/1SVQeffnbI33f-E6iUg6Xea2oYGbI-g3v/view?usp=sharing" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="menu_m">
+        <a href="index.html" class="logo"><img src="img/Icon/rimalogo.svg" alt=""></a>
+        <div class="menubox_m">
+            <ul>
+                <li><a class="nav-link" href="index.html">Projects</a></li>
+                <li><a class="nav-link" href="https://drive.google.com/file/d/1SVQeffnbI33f-E6iUg6Xea2oYGbI-g3v/view?usp=sharing" target="_blank">Resume</a></li>
+            </ul>
+        </div>
+        <div class="menu_btn">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
     </nav>
     <div class="container indexbanner">
-        <a href="index.html" data-aos="fade-right" data-aos-duration="800" class="logo"><img src="img/Icon/rimalogo.svg" alt=""></a>
         <div class="bannerbox row">
-            <div class=" col-md-6">
-                <div class="pic" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="img/ind_banner.jpg">
-                </div>
-            </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="row">
                     <div class="about col-md-12">
-                        <div class="text en mb-8" data-aos="fade-left" data-aos-duration="1000">Hi there</div>
-                        <div class="text en mb-8" data-aos="fade-left" data-aos-duration="1000">I'm Rima</div>
-                        <div class="text2 en mb-8" data-aos="fade-left" data-aos-duration="1000">#Product Designer</div>
-                    </div>
-                    <div class="col-md-12">
-                        <a href="about.html" class="normalBtn" data-aos="fade-right" data-aos-duration="1000">
-                            <div class="moreBtn">
-                                <div class="more">MY RESUME</div>
-                                <div class="more_line"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="mousebox" data-aos="zoom-in" data-aos-duration="1000">
-                        <div class="mouse">
-                            <img src="img/mouse.svg">
-                        </div>
-                        <div class="arrow">
-                            <img src="img/arrow_mousedown.svg">
-                        </div>
+                        <div class="text mb-8" data-aos="fade-in" data-aos-duration="1400">Hi, I'm Rima, a Human-Center Interaction Professional<br> Studying in User Experience(MS) from Arizona State University.<br> Have 4+ years of end-to-end design experience as a UI/UX designer. Seeking a 2022 Summer Internship position.</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="work_title en" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">SELECTED PROJECTS</div>
+        <!--        <div class="work_title en" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">SELECTED PROJECTS</div>-->
         <div class="works" id="uiux">
             <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-                <div class="work_content col-md-4">
-                    <a href="upstudy.html">
-                        <div class="works_img"><img src="img/banner_up.jpg" alt=""></div>
-                        <div class="project_name">上學院官方網站架構規劃、設計</div>
-                        <div class="p12">專案管理、網站企劃、UI/UX</div>
+                <div class="work_content col-md-6">
+                    <a href="wvt.html">
+                        <div class="works_img"><img src="img/wvt-banner.gif" alt=""></div>
+                        <div class="project_name">World Vision Taiwan</div>
+                        <div class="p12">Website UI/UX</div>
                     </a>
                 </div>
-                <div class="work_content col-md-4">
-                    <a href="erp.html">
+                <div class="work_content col-md-6">
+                    <a href="up-study.html">
                         <div class="works_img"><img src="img/banner_fei.jpg" alt=""></div>
-                        <div class="project_name">非凡.自助家 ERP管理系統</div>
-                        <div class="p12">訂銷管理流程、UI/UX</div>
-                    </a>
-                </div>
-                <div class="work_content col-md-4">
-                    <a href="urcosme.html">
-                        <div class="works_img"><img src="img/banner_ur.jpg" alt=""></div>
-                        <div class="project_name">UrCosme網站</div>
-                        <div class="p12">網站介面設計改版、服務流程優化、新頻道開發</div>
+                        <div class="project_name">Up Study</div>
+                        <div class="p12">Website UI/UX</div>
                     </a>
                 </div>
             </div>
@@ -158,6 +138,20 @@
             } else {
                 $('.menu').removeClass('fixed');
             }
+        });
+        //手機版menu
+        $('.menu_btn').click(function() {
+            $(this).toggleClass('active');
+            $('.menubox_m').toggleClass('open');
+            console.log('click');
+        });
+        $(window).resize(function() {
+            residemenu();
+            if (winW <= 450) {
+                console.log("！");
+                $('#uiuxmenu .submenu').css('display', 'none');
+            }
+            console.log("視窗發生改變了喲！");
         });
 
     </script>
