@@ -717,10 +717,6 @@ footer .linkedin a {
 /*各專案顏色設定----結束*/
 /*article*/
 
-.article .list {
-    list-style: circle;
-}
-
 .article .title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -767,13 +763,36 @@ footer .linkedin a {
 }
 
 /*Goals*/
-#Goals .item {
-    font-size: 1rem;
+
+.item .numicon {
+    width: 34px;
 }
 
-#Goals .item img {
-    width: 44px;
+/*am*/
+.article ul {
+    padding-left: 20px;
 }
+
+.am .link:after {
+    content: "";
+    background-image: url(../img/icon_external-link.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+    background-position-y: 1px;
+}
+
+.am .link {
+    color: #C73E3D;
+}
+
+/*
+.am ul li {
+    list-style: none;
+}
+*/
 
 /*下一頁設定---開始*/
 .nextarticle {
