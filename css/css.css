@@ -716,19 +716,25 @@ footer .linkedin a {
 
 /*各專案顏色設定----結束*/
 /*article*/
-
 .article .title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 700;
     width: 100%;
+    font-family: 'Inter';
+    letter-spacing: 0px;
+    color: var(--gray-dark);
 }
 
-.article .subtitle {
-    font-weight: bold;
+.article .pro_name h1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 2.2rem;
+    letter-spacing: 0px;
+    color: var(--gray-dark);
 }
 
-.article .date {
-    text-align: right;
+.article .pro_desc {
+    font-size: 14px;
 }
 
 .article .list ul {
@@ -736,9 +742,35 @@ footer .linkedin a {
     padding-left: 0;
 }
 
-.pro_name h1 {
-    font-weight: bold;
-    font-size: 1.77rem;
+.article .description {
+    font-size: 16px;
+}
+
+.highlight_txt {
+    display: inline-block;
+    background-color: var(--yellow);
+    padding: 0.3rem 0.5rem;
+    font-weight: 600;
+    font-family: 'Inter';
+    /*    color: white;*/
+    border-radius: 6px;
+    /*    font-size: 1rem;*/
+}
+
+.article .subtitle {
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+.solution .problem {
+    font-weight: 600;
+    font-family: 'Inter';
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.wvt .link {
+    font-family: 'Inter';
 }
 
 .img_description {
@@ -787,12 +819,6 @@ footer .linkedin a {
 .am .link {
     color: #C73E3D;
 }
-
-/*
-.am ul li {
-    list-style: none;
-}
-*/
 
 /*下一頁設定---開始*/
 .nextarticle {
@@ -893,16 +919,20 @@ footer .linkedin a {
     font-weight: bold;
 }
 
+/*
 .project_title {
     font-size: 0.875rem;
     font-style: italic;
     font-weight: 400;
     margin-bottom: 0.5rem;
 }
+*/
 
+/*
 .row.projects {
     width: 100%;
 }
+*/
 
 .row.mb-30 {
     margin-bottom: 30px;
@@ -1106,13 +1136,7 @@ footer .linkedin a {
     }
 }
 
-@media (max-width:768px) {
-
-    .article .device,
-    .article .date {
-        width: 50%;
-    }
-}
+@media (max-width:768px) {}
 
 
 /*sidemenu---開始*/
