@@ -98,7 +98,7 @@
                         <li><a href="#Overview">Overview</a></li>
                         <li><a href="#Goals">Goals of the study</a></li>
                         <li><a href="#Process">Process of the study</a></li>
-                        <li><a href="#Methods">Research & Tests Methods</a></li>
+                        <!--                        <li><a href="#Methods">Research & Tests Methods</a></li>-->
                         <li><a href="#Stakeholder">Stakeholder Analysis</a></li>
                         <li><a href="#Heuristic">Heuristic Evaluation</a></li>
                         <li><a href="#Content">Content Inventory and Audit</a></li>
@@ -114,6 +114,27 @@
                 </div>
                 <div class="col-md-3 bannerblock"></div>
                 <div class="col-md-9">
+                    <div class="row" id="Intro">
+                        <div class="col-md-12 mb-4 pro_name">
+                            <h1>American Humane Website</h1>
+                        </div>
+                        <div class="col-md-2 pro_desc">
+                            <div class="mb-2">Project type:</div>
+                            <div class="mb-2">Duration:</div>
+                            <div class="mb-2">Role:</div>
+                            <div class="mb-2">Methods:</div>
+                        </div>
+                        <div class="col-md-10 pro_desc">
+                            <div class="mb-2">Usability Study & Recommendations</div>
+                            <div class="mb-2">2021</div>
+                            <div class="mb-2">UX Researcher/Designer</div>
+                            <div class="mb-2">Stakeholder analysis / Heuristic evaluationw / Content inventory and audit / User research / Personas creation / User stories / Usability testing / Lo-fi Prototyping</div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="divider mb-6"></div>
+                        </div>
+                    </div>
+
                     <div class="row" id="Intro">
                         <div class="col-md-12 pro_name">
                             <h1>American Humane Website</h1>
@@ -156,6 +177,7 @@
                             <img src="img/am_review1.png" alt="">
                         </div>
                     </div>
+                    <!--
                     <div class="row mb-5" id="Methods">
                         <div class="col-md-12">
                             <div class="title">Research & Tests Methods</div>
@@ -181,6 +203,7 @@
                             </ul>
                         </div>
                     </div>
+-->
                     <div class="row mb-5" id="Stakeholder">
                         <div class="col-md-12 mb-2 title">Stakeholder Analysis</div>
                         <div class="col-md-12 mb-4 txt">
@@ -434,17 +457,17 @@
         });
 
         $(window).scroll(function() {
-            if ($(window).scrollTop() >= 600) {
-                $('.sidemenu').addClass('fixed-sidemenu');
-                $('.sidemenu div').addClass('visible-title');
-                $('.bannerblock').css("display", "block");
-                residemenu();
-            } else {
-                $('.sidemenu').removeClass('fixed-sidemenu');
-                $('.sidemenu div').removeClass('visible-title');
-                $('.bannerblock').css("display", "none");
-                $('.sidemenu').css("left", 0);
-            }
+        if ($(window).scrollTop() >= 600) {
+        $('.sidemenu').addClass('fixed-sidemenu');
+        $('.sidemenu div').addClass('visible-title');
+        $('.bannerblock').css("display", "block");
+        residemenu();
+        } else {
+        $('.sidemenu').removeClass('fixed-sidemenu');
+        $('.sidemenu div').removeClass('visible-title');
+        $('.bannerblock').css("display", "none");
+        $('.sidemenu').css("left", 0);
+        }
         });
 
         var num = 50;
