@@ -73,6 +73,7 @@ section {
 }
 
 body {
+    background: #F9F9F9;
     margin: 0;
     font-family: 'Hiragino Mincho ProN', 'Inter',
         "Segoe UI",
@@ -87,7 +88,6 @@ body {
     line-height: 1.5;
     color: var(--dark);
     text-align: left;
-    background-color: #fff;
     letter-spacing: 1px;
 }
 
@@ -228,6 +228,7 @@ figure {
 img {
     vertical-align: middle;
     border-style: none;
+    border-radius: 6px;
 }
 
 svg {

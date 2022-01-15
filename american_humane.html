@@ -134,18 +134,6 @@
                             <div class="divider mb-6"></div>
                         </div>
                     </div>
-
-                    <div class="row" id="Intro">
-                        <div class="col-md-12 pro_name">
-                            <h1>American Humane Website</h1>
-                        </div>
-                        <div class="col-md-6 device">Usability Study & Recommendations</div>
-                        <div class="col-md-6 date">2021</div>
-                        <div class="col-md-12 mb-3 team">UI.UX Designer</div>
-                        <div class="col-md-12">
-                            <div class="divider mb-5"></div>
-                        </div>
-                    </div>
                     <div class="row mb-5" id="Overview">
                         <div class="col-md-12 mb-2 title">Overview</div>
                         <div class="col-md-12 mb-2 txt ">
@@ -457,17 +445,17 @@
         });
 
         $(window).scroll(function() {
-        if ($(window).scrollTop() >= 600) {
-        $('.sidemenu').addClass('fixed-sidemenu');
-        $('.sidemenu div').addClass('visible-title');
-        $('.bannerblock').css("display", "block");
-        residemenu();
-        } else {
-        $('.sidemenu').removeClass('fixed-sidemenu');
-        $('.sidemenu div').removeClass('visible-title');
-        $('.bannerblock').css("display", "none");
-        $('.sidemenu').css("left", 0);
-        }
+            if ($(window).scrollTop() >= 600) {
+                $('.sidemenu').addClass('fixed-sidemenu');
+                $('.sidemenu div').addClass('visible-title');
+                $('.bannerblock').css("display", "block");
+                residemenu();
+            } else {
+                $('.sidemenu').removeClass('fixed-sidemenu');
+                $('.sidemenu div').removeClass('visible-title');
+                $('.bannerblock').css("display", "none");
+                $('.sidemenu').css("left", 0);
+            }
         });
 
         var num = 50;

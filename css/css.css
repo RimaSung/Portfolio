@@ -13,10 +13,6 @@ html {
     image-rendering: -webkit-optimize-contrast;
 }
 
-body {
-    background: #F9F9F9;
-}
-
 a {
     color: var(--dark);
 }
@@ -289,6 +285,28 @@ nav .menubox_m > ul > li:last-child {
     .menu_m {
         display: block;
     }
+}
+
+/*Index*/
+#ind_about {
+    margin: 5rem 0rem;
+}
+
+#ind_about,
+.article .pro_name h1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 2.2rem;
+    letter-spacing: 0px;
+    color: var(--gray-dark);
+}
+
+#ind_about .tags {
+    font-size: 16px;
+    list-style: none;
+    line-height: 1.8;
+    padding-left: 0px;
+    color: var(--gray);
 }
 
 /*banner*/
@@ -721,14 +739,6 @@ footer .linkedin a {
     font-weight: 700;
     width: 100%;
     font-family: 'Inter';
-    letter-spacing: 0px;
-    color: var(--gray-dark);
-}
-
-.article .pro_name h1 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 2.2rem;
     letter-spacing: 0px;
     color: var(--gray-dark);
 }

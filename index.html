@@ -67,43 +67,42 @@
             <span class="bottom"></span>
         </div>
     </nav>
-    <div class="container indexbanner">
-        <div class="bannerbox row">
+    <div class="container">
+        <div class="row" id="ind_about" data-aos="fade-in" data-aos-duration="1400">
+            <div class="col-md-12 mb-4 title">
+                Hello, I'm Rima, studying in MS User Experience program at Arizona State University and actively seeking a 2022 summer intern position.
+            </div>
             <div class="col-md-12">
-                <div class="row">
-                    <div class="about col-md-12">
-                        <div class="text mb-8" data-aos="fade-in" data-aos-duration="1400">Hello, I'm Rima, a UI/UX designer with 4+ years of professional experience and strong practical knowledge of end-to-end design, user-centered design methodologies,and user research methodologies.<br><br>
-                            I'm studying in MS User Experience program at Arizona State University and actively seeking a 2022 summer intern position.</div>
-                    </div>
-                </div>
+                <ul class="tags">
+                    <li># UI/UX Designer</li>
+                    <li># 4+ years of professional experience</li>
+                    <li># End-to-end design</li>
+                    <li># User-centered design methodologies</li>
+                    <li># User research methodologies</li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <!--        <div class="work_title en" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">SELECTED PROJECTS</div>-->
-        <div class="works" id="uiux">
-            <div class="row">
-                <div class="work_content col-md-12 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-                    <a href="wvt.html">
-                        <div class="works_img"><img src="img/wvt-banner.gif" alt=""></div>
-                        <div class="project_name">World Vision Taiwan Website</div>
-                        <div class="p12">UI / UX</div>
-                    </a>
-                </div>
-                <div class="work_content col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-                    <a href="up_study.html">
-                        <div class="works_img"><img src="img/up_banner.gif" alt=""></div>
-                        <div class="project_name">Up Study Website</div>
-                        <div class="p12">UI / UX</div>
-                    </a>
-                </div>
-                <div class="work_content col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-                    <a href="american_humane.html">
-                        <div class="works_img"><img src="img/am_banner.gif" alt=""></div>
-                        <div class="project_name">American Humane Website</div>
-                        <div class="p12"> UI / UX (Case Study)</div>
-                    </a>
-                </div>
+        <div class="row" id="uiux">
+            <div class="col-md-12 mb-5 work_content" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <a href="wvt.html">
+                    <div class="works_img"><img src="img/wvt-banner.gif" alt=""></div>
+                    <div class="project_name">World Vision Taiwan Website</div>
+                    <div class="p12">UI / UX</div>
+                </a>
+            </div>
+            <div class="col-md-6 mb-5 work_content" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <a href="up_study.html">
+                    <div class="works_img"><img src="img/up_banner.gif" alt=""></div>
+                    <div class="project_name">Up Study Website</div>
+                    <div class="p12">UI / UX</div>
+                </a>
+            </div>
+            <div class="col-md-6 mb-5 work_content" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <a href="american_humane.html">
+                    <div class="works_img"><img src="img/am_banner.gif" alt=""></div>
+                    <div class="project_name">American Humane Website</div>
+                    <div class="p12"> UI / UX (Case Study)</div>
+                </a>
             </div>
         </div>
     </div>
@@ -130,13 +129,13 @@
     <script type="text/javascript">
         AOS.init();
         var num = 50; //number of pixels before modifying styles
-//        $(window).bind('scroll', function() {
- // if ($(window).scrollTop() > num) {
- // $('.menu').addClass('fixed');
- // } else {
- // $('.menu').removeClass('fixed');
- // }
- // });
+        //        $(window).bind('scroll', function() {
+        // if ($(window).scrollTop() > num) {
+        // $('.menu').addClass('fixed');
+        // } else {
+        // $('.menu').removeClass('fixed');
+        // }
+        // });
         //手機版menu
         $('.menu_btn').click(function() {
             $(this).toggleClass('active');
