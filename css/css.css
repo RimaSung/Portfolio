@@ -756,13 +756,17 @@ footer .linkedin a {
     font-size: 16px;
 }
 
+.wvt .highlight_txt {
+    background-color: #F75C2F;
+}
+
 .highlight_txt {
     display: inline-block;
-    background-color: var(--yellow);
+    /*    background-color: var(--white);*/
     padding: 0.3rem 0.5rem;
     font-weight: 600;
     font-family: 'Inter';
-    /*    color: white;*/
+    color: var(--white);
     border-radius: 6px;
     /*    font-size: 1rem;*/
 }
@@ -780,7 +784,8 @@ footer .linkedin a {
 }
 
 .wvt .link {
-    font-family: 'Inter';
+    border-bottom: 1px solid #F75C2F;
+    color: #F75C2F;
 }
 
 .img_description {
