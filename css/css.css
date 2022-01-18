@@ -22,10 +22,6 @@ a:hover {
     color: var(--dark);
 }
 
-h2 {
-    font-size: 1.5rem;
-}
-
 img {
     width: 100%;
 }
@@ -292,8 +288,7 @@ nav .menubox_m > ul > li:last-child {
     margin: 5rem 0rem;
 }
 
-#ind_about,
-.article .pro_name h1 {
+#ind_about {
     font-family: 'Inter';
     font-weight: 700;
     font-size: 2.2rem;
@@ -310,28 +305,6 @@ nav .menubox_m > ul > li:last-child {
 }
 
 /*banner*/
-.indexbanner .bannerbox .text {
-    line-height: 1.5;
-    font-size: 1.66rem;
-}
-
-.indexbanner .bannerbox .text2 {
-    margin: 24px 0;
-}
-
-.bannerbox .about {
-    padding-top: 100px;
-}
-
-.bannerbox .about .txt {
-    font-size: 0.875rem;
-}
-
-.bannerbox .normalBtn {
-    margin-right: 8px;
-    margin-top: 100px;
-}
-
 .mousebox {
     width: 24px;
     position: absolute;
@@ -374,14 +347,7 @@ nav .menubox_m > ul > li:last-child {
     font-size: 0.75rem;
 }
 
-/*
-.en {
-    color: var(--dark);
-    line-height: 1;
-}
-*/
-
-.container {
+.container.article {
     position: relative;
 }
 
@@ -441,10 +407,6 @@ footer .linkedin a {
 
 .about_img {
     width: 94%;
-}
-
-.about .title.en {
-    margin-bottom: 10px;
 }
 
 .work_title {
@@ -700,9 +662,6 @@ footer .linkedin a {
     background-color: #E5C0C9;
 }
 
-.article.urcosme .title {
-    color: #DD5B7A;
-}
 
 .article.upstudy .title {
     color: #963f00;
@@ -710,10 +669,6 @@ footer .linkedin a {
 
 .article.upstudy .txt span {
     background-color: #f3dbca;
-}
-
-.article.lab .title {
-    color: #e08512;
 }
 
 .article.health .title {
@@ -734,13 +689,49 @@ footer .linkedin a {
 
 /*各專案顏色設定----結束*/
 /*article*/
-.article .title {
-    font-size: 2rem;
+.article .pro_name h1 {
+    font-family: 'Inter';
     font-weight: 700;
+    font-size: 3.8rem;
+    letter-spacing: 0px;
+    color: var(--gray-dark);
+    line-height: 1.2;
+}
+
+.article h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
     width: 100%;
     font-family: 'Inter';
     letter-spacing: 0px;
     color: var(--gray-dark);
+    line-height: 1.2;
+}
+
+.article h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+    font-family: 'Inter';
+    letter-spacing: 0px;
+    color: var(--gray-dark);
+    line-height: 1.2;
+}
+
+.wvt.article h3 {
+    color: var(--orange);
+}
+
+.article h3.arrow:before {
+    background-image: url(../img/Icon_ArrowRight.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-position-y: 1px;
+    margin-right: 4px;
 }
 
 .article .pro_desc {
@@ -757,7 +748,9 @@ footer .linkedin a {
 }
 
 .wvt .highlight_txt {
-    background-color: #F75C2F;
+    background-color: var(--white);
+    color: var(--dark);
+    /*    background-color: #F75C2F;*/
 }
 
 .highlight_txt {
@@ -766,7 +759,6 @@ footer .linkedin a {
     padding: 0.3rem 0.5rem;
     font-weight: 600;
     font-family: 'Inter';
-    color: var(--white);
     border-radius: 6px;
     /*    font-size: 1rem;*/
 }
@@ -776,16 +768,36 @@ footer .linkedin a {
     font-weight: 600;
 }
 
-.solution .problem {
+.up #Solutions .problem {
+    color: var(--brown);
+}
+
+.wvt #Solutions .problem {
+    color: var(--orange);
+}
+
+.am #Recommendations .problem {
+    color: var(--blue);
+}
+
+#Solutions .problem,
+#Recommendations .problem {
     font-weight: 600;
     font-family: 'Inter';
-    color: var(--gray);
     font-size: 16px;
 }
 
-.wvt .link {
-    border-bottom: 1px solid #F75C2F;
+.wvt #link {
+    border-color: #F75C2F;
     color: #F75C2F;
+}
+
+#link {
+    font-style: italic;
+    font-weight: 700;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom: 1px solid #F75C2F;
 }
 
 .img_description {
@@ -801,7 +813,49 @@ footer .linkedin a {
     width: 20px;
     height: 14px;
     content: "";
+}
 
+/*Animation*/
+.article .animation {
+    /*    opacity: 0;*/
+}
+
+.animation.fade-in {
+    /*    opacity: 1;*/
+    transition: 1s;
+}
+
+/*wvt Research*/
+
+.wvt.bg_dark {
+    background-color: var(--orange);
+}
+
+.fluid_container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 70px 15px;
+    color: var(--white);
+}
+
+.fluid_container .title,
+.fluid_container .txt {
+    color: var(--white);
+}
+
+.painpoint {
+    padding: 1rem 1.2rem;
+    background-color: var(--orange-light);
+    border-radius: 6px;
+}
+
+.painpoint.h100 {
+    height: 100%;
+}
+
+.painpoint ul {
+    margin: 0;
+    padding: 0;
 }
 
 /*Solutions*/
@@ -820,19 +874,105 @@ footer .linkedin a {
     padding-left: 20px;
 }
 
-.am .link:after {
-    content: "";
-    background-image: url(../img/icon_external-link.svg);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-size: cover;
-    background-position-y: 1px;
+.am #link {
+    color: var(--blue);
+    border-color: var(--blue);
 }
 
-.am .link {
-    color: #C73E3D;
+.am #Goals ul {
+    padding: 0;
+}
+
+.am .light_bg {
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    background-color: var(--blue-light);
+}
+
+.am #Goals li {
+    list-style: none;
+}
+
+.am #Goals .numicon,
+.am #Goals .txt {
+
+    display: inline-block;
+}
+
+.am #Stakeholder {
+    background-image: url(../img/am_review2.png);
+    background-repeat: no-repeat;
+    padding-bottom: 6.2rem;
+    background-size: 60%;
+    background-position: bottom right;
+}
+
+.stakeholder_img {
+    display: none;
+}
+
+.wvt #Identify h2,
+.am #Heuristic h2 {
+    color: var(--white);
+}
+
+.am #Recommendations h3 {
+    color: var(--blue);
+}
+
+.am.bg_dark {
+    background-color: var(--blue);
+}
+
+.am .test_result,
+.am .prototype_result {
+    display: block;
+    overflow: hidden;
+}
+
+.am .test_result h2,
+.am .prototype_result h2 {
+    color: var(--white);
+}
+
+.am .test_result ul,
+.am .prototype_result ul {
+    font-family: 'Inter';
+    font-weight: 700;
+    letter-spacing: 0px;
+    padding: 0;
+    list-style: none;
+}
+
+.am .prototype_result li {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    margin-bottom: 1.3rem;
+}
+
+.am .test_result li {
+    width: 33%;
+    display: inline-block;
+    padding: 1rem;
+    margin-bottom: 0.3rem;
+    vertical-align: top;
+}
+
+.am .test_result span,
+.am .prototype_result span {
+    font-size: 1rem;
+}
+
+.am .test_result .percentage,
+.am .prototype_result .percentage {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+/*up-study*/
+.up.bg_dark {
+    background-color: var(--brown);
 }
 
 /*下一頁設定---開始*/
@@ -916,11 +1056,6 @@ footer .linkedin a {
     line-height: 1.8;
 }
 
-.about .title.en {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
 .years_txt {
     width: 100%;
     font-weight: bold;
@@ -933,21 +1068,6 @@ footer .linkedin a {
     width: 100%;
     font-weight: bold;
 }
-
-/*
-.project_title {
-    font-size: 0.875rem;
-    font-style: italic;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-}
-*/
-
-/*
-.row.projects {
-    width: 100%;
-}
-*/
 
 .row.mb-30 {
     margin-bottom: 30px;
@@ -1052,8 +1172,6 @@ footer .linkedin a {
     }
 }
 
-@media (max-width: 1440px) {}
-
 @media (max-width: 992px) {
     .mousebox {
         width: 18px;
@@ -1131,27 +1249,24 @@ footer .linkedin a {
     }
 
     .mb-7 {
-        margin-bottom: 1rem !important;
+        margin-bottom: 3rem !important;
     }
 }
 
 @media screen and (max-width: 543.9px) {
 
-    .drupal,
-    .profile {
-        order: 2;
-    }
-
+    /*
     .mt-6 {
         margin-top: 1rem !important;
     }
+*/
 
+    /*
     .mb-7 {
         margin-bottom: 1rem !important;
     }
+*/
 }
-
-@media (max-width:768px) {}
 
 
 /*sidemenu---開始*/
@@ -1182,38 +1297,108 @@ footer .linkedin a {
     visibility: visible;
 }
 
-.bannerblock {
-    display: none;
-}
-
 @media (min-width: 1028px) {}
 
 @media (max-width: 786px) {
-    .fixed-sidemenu {
-        display: none;
+
+    #Solutions .architecture,
+    #Solutions .information,
+    .am .inventory,
+    .am .personas {
+        order: 2;
+    }
+
+    #Solutions .image {
+        margin-bottom: 2rem;
+    }
+
+    .am .stakeholder_img {
+        display: block;
+    }
+
+    .am #Stakeholder {
+        background: none;
+        padding: 2rem;
+    }
+
+    .am .inventory {
+        margin-top: 1rem;
+    }
+
+    .am #Research .percentage {
+        margin: 1rem 0;
     }
 }
 
 /*sidemenu---結束*/
-
-.aboutabsolute {
-    bottom: 0px;
-}
-
 @media (min-width: 375px) {}
 
-.test {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    top: 200px;
+
+/*@Media_220117*/
+@media (min-width: 1200px) {
+    .container.article {
+        max-width: 960px;
+    }
 }
 
-/*uiux_introbox設定---*/
-.uiux_introbox #intro {
-    padding-top: 4rem;
+@media (max-width: 992px) {
+    .article .pro_name h1 {
+        font-size: 3rem;
+    }
+
+    .article h2 {
+        font-size: 2.4rem;
+    }
 }
 
-.uiux .work_content {
-    margin-bottom: 3rem;
+@media (max-width: 960px) {
+    .am .test_result li {
+        width: 49%;
+    }
+}
+
+/*
+@media screen and (min-width: 1920px) {
+    .container.article {
+        max-width: 1440px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container.article {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container.article {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container.article {
+        max-width: 540px;
+    }
+
+    .article h2 {
+        font-size: 2.4rem;
+    }
+}
+*/
+
+/*
+@media screen and (min-width: 1440px) {
+    .container.article {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container.article {
+        max-width: 960px;
+    }
+*/
+
+
 }

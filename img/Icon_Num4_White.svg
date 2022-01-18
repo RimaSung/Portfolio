@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon_Num4</title>
+    <defs>
+        <path d="M36.24,39.48 L36.24,38.752 C34.238,38.726 33.9,38.362 33.9,36.204 L33.9,34.358 L36.682,34.358 L36.682,33.188 L33.9,33.188 L33.9,20.188 L31.482,20.188 L22.382,33.11 L22.382,34.358 L30.78,34.358 L30.78,36.204 C30.78,37.452 30.624,38.128 30.234,38.414 C29.922,38.674 29.636,38.726 28.414,38.778 L28.414,39.48 L36.24,39.48 Z M30.78,33.188 L23.552,33.188 L30.78,22.892 L30.78,33.188 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon_Num4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4" fill-rule="nonzero" fill="#ffffff">
+            <use xlink:href="#path-1"></use>
+            <use xlink:href="#path-1"></use>
+        </g>
+        <circle id="Oval" stroke="#ffffff" stroke-width="2" cx="30" cy="30" r="29"></circle>
+    </g>
+</svg>

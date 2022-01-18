@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="description" content="Rima Portfolio">
+    <meta name="author" content="Rima">
     <title>Rima Design Works</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/grid/">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400&display=swap" rel="stylesheet">
@@ -13,45 +13,20 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap');
 
     </style>
     <!-- Custom styles for this template -->
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="js/jquery-1.4.3.js" type="text/javascript"></script>
-    <!--    slider-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script type="text/javascript">
-        $(window).on('scroll', function() {
-            var scrolltop = $(this).scrollTop();
-            var $nav = $("#navigation");
-
-            if (scrolltop >= $nav.offset().top + $nav.height()) {
-                $('#fixedbar').fadeIn(250);
-            } else {
-                $('#fixedbar').fadeOut(250);
-            }
-        });
-
-    </script>
+    <!--Animation-->
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/debug.addIndicators.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/animation.gsap.js"></script>
+    <script src="js/TweenMax.js"></script>
+    <script src="js/animation.js"></script>
 </head>
 
 <body>
@@ -82,307 +57,370 @@
             <span class="bottom"></span>
         </div>
     </nav>
-    <div class="container article">
+    <div class="container">
         <div class="row">
-            <div class="col-md-12 mb-5">
+            <div class="col-md-12 mb-4">
                 <img src="img/am_banner.gif">
             </div>
         </div>
     </div>
-    <article class="article am">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 sidemenu">
-                    <ul>
-                        <li><a href="#Intro">Intro</a></li>
-                        <li><a href="#Overview">Overview</a></li>
-                        <li><a href="#Goals">Goals of the study</a></li>
-                        <li><a href="#Process">Process of the study</a></li>
-                        <!--                        <li><a href="#Methods">Research & Tests Methods</a></li>-->
-                        <li><a href="#Stakeholder">Stakeholder Analysis</a></li>
-                        <li><a href="#Heuristic">Heuristic Evaluation</a></li>
-                        <li><a href="#Content">Content Inventory and Audit</a></li>
-                        <li><a href="#Research">User Research</a></li>
-                        <li><a href="#Personas">Personas and User Stories Creation</a></li>
-                        <li><a href="#Materials">UsabilityTesting Materials</a></li>
-                        <li><a href="#Usability">Usability Testing (Published Site)</a></li>
-                        <li><a href="#Prototype">Prototype Creation</a></li>
-                        <li><a href="#Result">Prototype Testing Result</a></li>
-                        <li><a href="#Recommendations">Recommendations</a></li>
-                        <li><a href="#Next">Next Steps</a></li>
-                    </ul>
+    <article>
+        <div class="container article am">
+            <div class="row" id="Intro">
+                <div class="col-md-12 mb-2 pro_name">
+                    <h1>American Humane Website</h1>
                 </div>
-                <div class="col-md-3 bannerblock"></div>
-                <div class="col-md-9">
-                    <div class="row" id="Intro">
-                        <div class="col-md-12 mb-4 pro_name">
-                            <h1>American Humane Website</h1>
-                        </div>
-                        <div class="col-md-2 pro_desc">
-                            <div class="mb-2">Project type:</div>
-                            <div class="mb-2">Duration:</div>
-                            <div class="mb-2">Role:</div>
-                            <div class="mb-2">Methods:</div>
-                        </div>
-                        <div class="col-md-10 pro_desc">
-                            <div class="mb-2">Usability Study & Recommendations</div>
-                            <div class="mb-2">2021</div>
-                            <div class="mb-2">UX Researcher/Designer</div>
-                            <div class="mb-2">Stakeholder analysis / Heuristic evaluationw / Content inventory and audit / User research / Personas creation / User stories / Usability testing / Lo-fi Prototyping</div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="divider mb-6"></div>
-                        </div>
+                <div class="col-md-12 mb-2 pro_desc">
+                    <div class="row">
+                        <div class="col-md-2 mb-2">Project type:</div>
+                        <div class="col-md-10 mb-2">Usability Study & Recommendations</div>
                     </div>
-                    <div class="row mb-5" id="Overview">
-                        <div class="col-md-12 mb-2 title">Overview</div>
-                        <div class="col-md-12 mb-2 txt ">
-                            American Humane is a nonprofit organization and committed to ensuring the safety, welfare, and well-being of animals. This is a summative evaluation intended to improve user experience on the American Humane Website by identifying user needs and goals by conducting usability research.
-                        </div>
+                    <div class="row">
+                        <div class="col-md-2 mb-2">Duration:</div>
+                        <div class="col-md-10 mb-2">2021</div>
                     </div>
-                    <div class="row mb-5" id="Goals">
-                        <div class="col-md-12">
-                            <div class="title">Goals of the study</div>
-                            <div class="txt mb-4">The purpose of this study is to deliver proposed solutions and accessible methods to increase user experience on:</div>
-                        </div>
-                        <div class="col-md-4 item">
+                    <div class="row">
+                        <div class="col-md-2 mb-2">Role:</div>
+                        <div class="col-md-10 mb-2">UX Researcher/Designer</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 mb-2">Methods:</div>
+                        <div class="col-md-10 mb-2">Stakeholder analysis / Heuristic evaluationw / Content inventory and audit / User research / Personas creation / User stories / Usability testing / Lo-fi Prototyping</div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-2 mb-6 divider"></div>
+            </div>
+            <div class="row mb-7" id="Overview">
+                <div class="col-md-4 mb-2">
+                    <h2>OVERVIEW</h2>
+                </div>
+                <div class="col-md-8 mb-2 txt">
+                    American Humane is a nonprofit organization and committed to ensuring the safety, welfare, and well-being of animals. This is a summative evaluation intended to improve user experience on the American Humane Website by identifying user needs and goals by conducting usability research.
+                </div>
+            </div>
+            <div class="row mb-7" id="Goals">
+                <div class="col-md-4">
+                    <h2>GOALS</h2>
+                </div>
+                <div class="col-md-8">
+                    <div class="txt mb-4">The purpose of this study is to deliver proposed solutions and accessible methods to increase user experience on:</div>
+                    <ul>
+                        <li class="mb-3 item">
                             <div class="numicon mb-2"><img src="img/Icon_Num1.svg" alt=""></div>
-                            <div class="txt">Donation information-seeking process</div>
-                        </div>
-                        <div class="col-md-4 item">
+                            <div class="txt">Donation information-seeking process.</div>
+                        </li>
+                        <li class="mb-3 item">
                             <div class="numicon mb-2"><img src="img/Icon_Num2.svg" alt=""></div>
                             <div class="txt">Adoption information-seeking process</div>
-                        </div>
-                        <div class="col-md-4 item">
+                        </li>
+                        <li class="mb-3 item">
                             <div class="numicon mb-2"><img src="img/Icon_Num3.svg" alt=""></div>
                             <div class="txt">Financial information-seeking process</div>
-                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-7" id="Process">
+                <div class="col-md-12">
+                    <h2 class="mb-4">STUDY PROCESS</h2>
+                    <div class="txt mb-4">This study took apart into three different phases and the user data were collected along with each phase.</div>
+                    <img src="img/am_review1.png" alt="">
+                </div>
+            </div>
+            <div class="row mb-7" id="Stakeholder">
+                <div class="col-md-6">
+                    <h2 class="mb-4">STAKEHOLDER ANALYSIS</h2>
+                    <div class="txt mb-4">With the purpose of assessing how the interests of stakeholders should be addressed in a project plan, policy, program, or other action, this research collects the related information on the Staff & Board page on the American Humane website. In the light of gathering information about stakeholders' attitudes and needs, project owners, product designers, web developers, and authors contribute a high impact on the project. Hence, their needs and goals should be prioritized.</div>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-sm-12 stakeholder_img">
+                    <img src="img/am_review2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid article am bg_dark mb-7">
+            <div class="fluid_container">
+                <div class="row" id="Heuristic">
+                    <div class="col-md-6">
+                        <h2 class="mb-4">Heuristic Evaluation</h2>
+                        <div class="txt mb-4">To assess the usability of the American Humane website, a heuristic evaluation was conducted to measure usability of user interface and go through a checklist of criteria to find flaws. The major issues were identified as following:</div>
                     </div>
-                    <div class="row mb-5" id="Process">
-                        <div class="col-md-12">
-                            <div class="title">Process of the study</div>
-                            <div class="txt mb-4">This study took apart into three different phases and the user data were collected along with each phase.</div>
-                            <img src="img/am_review1.png" alt="">
-                        </div>
-                    </div>
-                    <!--
-                    <div class="row mb-5" id="Methods">
-                        <div class="col-md-12">
-                            <div class="title">Research & Tests Methods</div>
-                            <div class="txt mb-4">For the purpose of collecting user data, the following research and testing methods were used:</div>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="item">
-                                <li class="txt mb-2">Stakeholder analysis</li>
-                                <li class="txt mb-2">Heuristic evaluation</li>
-                                <li class="txt mb-2">Content inventory and audit</li>
-                                <li class="txt mb-2">User research</li>
-                                <li class="txt mb-2">Personas creation</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li class="txt mb-2">User stories</li>
-                                <li class="txt mb-2">Usability testing materials</li>
-                                <li class="txt mb-2">Usability testing (Published)</li>
-                                <li class="txt mb-2">Prototype creation</li>
-                                <li class="txt mb-2">Prototype testing materials</li>
-                                <li class="txt mb-2">Prototyping</li>
-                            </ul>
-                        </div>
-                    </div>
--->
-                    <div class="row mb-5" id="Stakeholder">
-                        <div class="col-md-12 mb-2 title">Stakeholder Analysis</div>
-                        <div class="col-md-12 mb-4 txt">
-                            With the purpose of assessing how the interests of stakeholders should be addressed in a project plan, policy, program, or other action, this research collects the related information on the Staff & Board page on the American Humane website. In the light of gleaning information about their attitude and needs, <b><I>the role of the project owner, product designer, web developer, and author contribute a high impact toward the project</I></b>. Hence, their needs and goals should be prioritized.
-                        </div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8"><img src="img/am_review2.png" alt=""></div>
-                        <div class="col-md-2"></div>
-                    </div>
-                    <div class="row mb-5" id="Heuristic">
-                        <div class="col-md-12 mb-2 title">Heuristic Evaluation</div>
-                        <div class="col-md-12 mb-4 txt ">
-                            To assess the usability of the American Humane website, a heuristic evaluation was conducted to measure usability of user interface and go through a checklist of criteria to find flaws. The major issues were identified as following:
-                        </div>
-                        <div class="col-md-4 item mb-4">
-                            <div class="numicon mb-2"><img src="img/Icon_Num1.svg" alt=""></div>
-                            <div class="txt">Lack system status on pages.</div>
-                        </div>
-                        <div class="col-md-4 item mb-4">
-                            <div class="numicon mb-2"><img src="img/Icon_Num2.svg" alt=""></div>
-                            <div class="txt">Meaning of the words is unclear for users.</div>
-                        </div>
-                        <div class="col-md-4 item mb-4">
-                            <div class="numicon mb-2"><img src="img/Icon_Num3.svg" alt=""></div>
-                            <div class="txt">Some pages is too long to control and read on the mobile version.</div>
-                        </div>
-                        <div class="col-md-4 item">
-                            <div class="numicon mb-2"><img src="img/Icon_Num4.svg" alt=""></div>
-                            <div class="txt">The interaction is inconsistent when clicking contents with same design pattern.</div>
-                        </div>
-                        <div class="col-md-4 item">
-                            <div class="numicon mb-2"><img src="img/Icon_Num5.svg" alt=""></div>
-                            <div class="txt">Article pages are inconsistently labeled. Many articles place tags but some did not.</div>
-                        </div>
-                        <div class="col-md-4 item">
-                            <div class="numicon mb-2"><img src="img/Icon_Num6.svg" alt=""></div>
-                            <div class="txt">Did not give an instruction when people get into a error page.</div>
-                        </div>
-                    </div>
-                    <div class="row mb-5" id="Content">
-                        <div class="col-md-12 mb-2 title">Content Inventory and Audit</div>
-                        <div class="col-md-6 txt">
-                            A list of content inventory and audit was established before conducting user research.
-                            This list help to oversee every piece of digital content in the study scope on the website.
-                        </div>
-                        <div class="col-md-6 mb-5"><img src="img/am_review3.png" alt=""></div>
-                    </div>
-                    <div class="row mb-5" id="Research">
-                        <div class="col-md-12 mb-4 title">User Research</div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-12 mb-4 txt">
-                                    With the purpose of discovering demographics and psychographics of current or potential users of the site, the survey was conducted from September 12 to 16. Demographics and psychographic highlights for 5 respondents include:
-                                </div>
-                                <div class="col-md-6 txt">
-                                    <img src="img/am_review4.png" alt="">
-                                </div>
-                                <div class="col-md-6 txt">
-                                    <img src="img/am_review6.png" alt="">
-                                </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 mb-4 item">
+                                <div class="numicon mb-2"><img src="img/Icon_Num1_White.svg" alt=""></div>
+                                Lack system status on pages.
+                            </div>
+                            <div class="col-md-6 mb-4 item">
+                                <div class="numicon mb-2"><img src="img/Icon_Num2_White.svg" alt=""></div>
+                                Meaning of the words is unclear for users.
+                            </div>
+                            <div class="col-md-6 mb-4 item">
+                                <div class="numicon mb-2"><img src="img/Icon_Num3_White.svg" alt=""></div>
+                                Some pages is too long to control and read on the mobile version.
+                            </div>
+                            <div class="col-md-6 mb-4 item">
+                                <div class="numicon mb-2"><img src="img/Icon_Num4_White.svg" alt=""></div>
+                                The interaction is inconsistent when clicking contents with same design pattern.
+                            </div>
+                            <div class="col-md-6 item">
+                                <div class="numicon mb-2"><img src="img/Icon_Num5_White.svg" alt=""></div>
+                                Article pages are inconsistently labeled. Many articles place tags but some did not.
+                            </div>
+                            <div class="col-md-6 item">
+                                <div class="numicon mb-2"><img src="img/Icon_Num6_White.svg" alt=""></div>
+                                Did not give an instruction when people get into a error page.
                             </div>
                         </div>
-                        <div class="col-md-6"><img src="img/am_review5.png" alt=""></div>
-                    </div>
-                    <div class="row mb-5" id="Personas">
-                        <div class="col-md-12 mb-4 title">Personas and User Stories Creation</div>
-                        <div class="col-md-6"><img src="img/am_review7.png" alt=""></div>
-                        <div class="col-md-6 mt-6 txt">
-                            As a report by the user research, three personas were built to demonstrate users's characteristics, expectation, goals of the American Humane website. The picture shows an example of one persona that was created.
-                        </div>
-                    </div>
-                    <div class="row mb-5" id="Materials">
-                        <div class="col-md-12 mb-2 title">Usability Testing Materials</div>
-                        <div class="col-md-12 mb-4 txt">To conduct the useability test on the published site smoothly and keep the testing process in order, the following materials were developed.</div>
-                        <div class="col-md-12"><img src="img/am_review8.png" alt=""></div>
-                    </div>
-                    <div class="row mb-5" id="Usability">
-                        <div class="col-md-12 mb-2 title">Usability Testing (Published Site)</div>
-                        <div class="col-md-12 mb-4 txt">Representative participants of the users of the American Humane website were recruited from the researcher personal networks. These sessions were conducted in-person at ASU poly campus. Participants take approximately 1 hour to complete whole testing session.</div>
-                        <div class="col-md-12">
-                            <div class="subtitle">Goal of Usability Testing</div>
-                        </div>
-                        <div class="col-md-12 mb-2 txt">With the view of the previous data, the following questions should be observed in the usability test :</div>
-                        <div class="col-md-6 mb-4">
-                            <ul>
-                                <li class="mb-2">Do people know where can find the program page?</li>
-                                <li class="mb-2">What kind of animal rescue article people are interested in?</li>
-                                <li class="mb-2">Do people know where can find privacy policy information?</li>
-                                <li class="mb-2">Do people know where can make a donation?</li>
-                                <li class="mb-2">Do people know where can find the dog/cat adoption information?</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <ul>
-                                <li class="mb-2">Do people know links for articles that are clickable?</li>
-                                <li class="mb-2">Do people know the banner of adoption shelter is clickable?</li>
-                                <li class="mb-2">Do people know where can find financial information?</li>
-                                <li class="mb-2">Do people understand the IRS Form 990 is about the tax information?</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="subtitle">Major Result</div>
-                        </div>
-                        <div class="col-md-12 mb-4 txt">Overall, in the usability research, all participants consider <I><b>some words on the menu and contents are hard to navigate and understand</b></I>. Furthermore, <I><b>participants were unable or take time to find information by accessing banners.</b></I></div>
-                        <div class="col-md-12"><img src="img/am_review9.png" alt=""></div>
-                    </div>
-                    <div class="row mb-5" id="Prototype">
-                        <div class="col-md-12 mb-2 title">Prototype Creation</div>
-                        <div class="col-md-12 mb-2 txt">A medium-fidelity prototype for a redesigned American Humane website was created with key interactivity using Figma. The prototype includes elements such as text, pictures, or form. All pages were designed with a cohesive layout. Hence, it makes users easier to navigate to their target. The pivotal point is that participants can go through all tasks of scenarios with this prototype.</div>
-                        <div class="col-md-12 mb-4">
-                            <a href="https://reurl.cc/NZKQg6" class="link">
-                                Review Protype on Figma
-                            </a>
-                        </div>
-                        <div class="col-md-12"><img src="img/am_review10.png" alt=""></div>
-                    </div>
-                    <div class="row mb-5" id="Result">
-                        <div class="col-md-12 mb-2 title">Prototype Testing Result</div>
-                        <div class="col-md-12 mb-4 txt">For the sake of resolving the issues identified in phase one, the prototype was created with proposed solutions and went through usability testing again. The proposed solutions have a significant effect to increase overall user satisfaction. First of all, <I><b>participant average task completion time was at least 50% decreased in the prototype testing</b></I>. Moreover, <I><b>participants were able to achieve tasks in all scenarios. </b></I></div>
-                        <div class="col-md-12 mb-4 txt"><img src="img/am_review11.png" alt=""></div>
-                    </div>
-                    <div class="row mb-5" id="Recommendations">
-                        <div class="col-md-12 mb-4 title">Recommendations</div>
-                        <div class="col-md-12">
-                            <div class="row mb-5">
-                                <div class="col-md-6 mb-2">
-                                    <div class="subtitle">Modify information architecture</div>
-                                    <div class="txt">It would be recommended to add the item of“Animal Adoption” to the menu due to participants cannot locate information about dog/cat adoption. In the prototype version, this solution allows participants able to locate the adoption information directly through the menu. Even though the average time completion from prototype testing was the same as published site testing, participants did not enter the irrelevant page.
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 txt"><img src="img/am_review12.png" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="row mb-5">
-                                <div class="col-md-12 mb-4">
-                                    <div class="subtitle">Separate the button and banner</div>
-                                    <div class="txt">According to the result from task 4 in the published site testing, participants spend 45 seconds finding the donation banner. Moreover, there was 1 participant cannot complete the task. Therefore, this issue was recorded as a blocker Issue, which means it impacts users' goals seriously. In the prototype test, the issue was fixed by separating the button and banner into two sides. This makes the button clear and not be influenced by a fancy background. This solution is also executable to task 5. The average time to complete the task has 67% improvement.
-                                    </div>
-                                </div>
-                                <div class="col-md-12 mb-4"><img src="img/am_review13.png" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="row mb-5">
-                                <div class="col-md-12 mb-4">
-                                    <div class="subtitle">Make a descriptive, concise navigation</div>
-                                    <div class="txt">Since participants cannot locate tax and financial information, it would be recommended to place descriptive, concise navigation for solving those issues. For example, in the published site testing, 2 out of 5 participants cannot locate the tax form. The average task completion time is 120 seconds. These phenomena are attributed to the unfamiliarity of the wording of "Government" on the navigation bar. In the prototype version, the wording had been modified to “Financial Accountability”. As a result 92% improvement on average time to complete the task. Thus, it is recommended to simplify the navigation for users targeting key user goals identified in the study.
-                                    </div>
-                                </div>
-                                <div class="col-md-12 mb-4"><img src="img/am_review14.png" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="row mb-5">
-                                <div class="col-md-6 mb-4">
-                                    <div class="subtitle">Make the design of the donation page consistent</div>
-                                    <div class="txt">According to the comment from 3 participants, there are two different donation forms on the published site which makes them confused. Moreover, this issue is not only pointed out by participants but also a result from the Heuristic Evaluation research. Hence, in the prototype version, this issue was fixed by creating a consistent design pattern.
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4"><img src="img/am_review15.png" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="row mb-5">
-                                <div class="col-md-6 mb-4">
-                                    <div class="subtitle">Create a design guide for the website</div>
-                                    <div class="txt">Participants comment that the font size on the site is hard to read. This issue might be a reason for them enter to irrelevant pages when taking tasks. Therefore design guides for the font-size were created as follows:
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4"><img src="img/am_review16.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-5" id="Next">
-                        <div class="col-md-12 mb-2 title">Next Steps</div>
-                        <div class="col-md-12 mb-2 txt">Overall, this study aimed to ameliorate user experience by conducting quantitative, qualitative, and usability research. The result from the phase of preliminary data collection provides a first glance at the American Humane website. After conducting the published site usability testing, can conclude the major issues of the site are caused by unclear wording on navigation, content, or title. Furthermore, the buttons on banners are not obvious and make users ignore them or spend a lot of time to find them. Fortunately, solutions carry out with prototypes solve those issues. They are:
-                        </div>
-                        <div class="col-md-12">
-                            <ul>
-                                <li class="mb-2">Modify information architecture</li>
-                                <li class="mb-2">Separate the button and banner</li>
-                                <li class="mb-2">Make a descriptive, concise navigation</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-12 mb-2 subtitle">Additional considerations for improving usability?</div>
-                        <div class="col-md-12 txt">The solutions provided on previous pages can resolve major issues that impact users seriously. However, 2 out of 5 participants comment that pictures and their content title are unrelated on the animal rescue page when doing task 1. This issue was not tested in the prototype testing since user flow on the site needs to be improved before conducting visual design. Once the user flow is ameliorated, can observe this issue again. Perhaps the issue does not come from visual design problems. It could be caused by something else.</div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container article am">
+            <div class="row mb-7 justify-content-center align-items-center" id="Content">
+                <div class="col-md-6 inventory"><img src="img/am_review3.png" alt=""></div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">CONTENT INVENTORY AND AUDIT</h2>
+                    <div class="txt">
+                        A list of content inventory and audit was established before conducting user research.
+                        This list help to oversee every piece of digital content in the study scope on the website.
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-7" id="Research">
+                <div class="col-md-12 mb-4">
+                    <h2>USER RESEARCH</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12 mb-4 txt">
+                            With the purpose of discovering demographics and psychographics of current or potential users of the site, the survey was conducted from September 12 to 16. Demographics and psychographic highlights for 5 respondents include:
+                        </div>
+                        <div class="col-md-6 col-sm-6 txt">
+                            <img src="img/am_review4.png" alt="">
+                        </div>
+                        <div class="col-md-6  col-sm-6 txt">
+                            <img src="img/am_review6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 percentage"><img src="img/am_review5.png" alt=""></div>
+            </div>
+            <div class="row mb-7 justify-content-center align-items-center" id="Personas">
+                <div class="col-md-6 personas">
+                    <img src="img/am_review7.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">Personas and User Stories Creation</h2>
+                    <div class="txt"> As a report by the user research, three personas were built to demonstrate users's characteristics, expectation, goals of the American Humane website. The picture shows an example of one persona that was created.</div>
+
+                </div>
+            </div>
+            <div id="Usability" class="mb-7 testing">
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <h2 class="mb-4">USABILITY TESTING</h2>
+                        <div class="txt">Representative participants of the users of the American Humane website were recruited from the researcher personal networks. These sessions were conducted in-person at ASU poly campus. Participants take approximately 1 hour to complete whole testing session.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <div class="light_bg">
+                            <h3 class="mb-2">
+                                <h3>Goal of Usability Testing</h3>
+                            </h3>
+                            <div class="txt mb-2">With the view of the previous data, the following questions should be observed in the usability test :</div>
+                            <div>
+                                <ul>
+                                    <li class="mb-2">Do people know where can find the program page?</li>
+                                    <li class="mb-2">What kind of animal rescue article people are interested in?</li>
+                                    <li class="mb-2">Do people know where can find privacy policy information?</li>
+                                    <li class="mb-2">Do people know where can make a donation?</li>
+                                    <li class="mb-2">Do people know where can find the dog/cat adoption information?</li>
+                                    <li class="mb-2">Do people know links for articles that are clickable?</li>
+                                    <li class="mb-2">Do people know the banner of adoption shelter is clickable?</li>
+                                    <li class="mb-2">Do people know where can find financial information?</li>
+                                    <li class="mb-2">Do people understand the IRS Form 990 is about the tax information?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="light_bg">
+                            <h3 class="mb-2">
+                                <h3>Usability Testing Materials</h3>
+                            </h3>
+                            <div class="txt mb-2">To conduct the useability test on the published site smoothly and keep the testing process in order, the following materials were developed.</div>
+                            <div class="col-md-12"><img src="img/am_review8.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid article am bg_dark mb-7">
+            <div class="fluid_container">
+                <div class="row test_result">
+                    <div class="col-md-12 text-center mb-4">
+                        <h2>USABILITY TESTING RESULTS</h2>
+                    </div>
+                    <div class="col-md-12 mb-4 txt">Overall, in the usability research, all participants consider <I><b>some words on the menu and contents are hard to navigate and understand</b></I>. Furthermore, <I><b>participants were unable or take time to find information by accessing banners.</b></I></div>
+                    <div class="col-md-12">
+                        <ul>
+                            <li>
+                                <div class="percentage">80%</div>
+                                <div class="txt">Participants expect the "History" section provides financial information</div>
+                            </li>
+                            <li>
+                                <div class="percentage">100%</div>
+                                <div class="txt">Participants consider the shelter banner is not clear for them to locate on the shelter website</div>
+                            </li>
+                            <li>
+                                <div class="percentage">100%</div>
+                                <div class="txt">Participants consider the wording of "Governance" on the submenu is not clear</div>
+                            </li>
+                            <li>
+                                <div class="percentage">80%</div>
+                                <div class="txt">Participants click the donation button on the top of the menu</div>
+                            </li>
+                            <li>
+                                <div class="percentage">63.6 <span>Seconds</span></div>
+                                <div class="txt">Average task completion</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container article am">
+            <div class="row mb-5" id="Prototype">
+                <div class="col-md-12 mb-4">
+                    <h2>PROTOTYPE CREATION</h2>
+                </div>
+                <div class="col-md-12 mb-2 txt">A medium-fidelity prototype for a redesigned American Humane website was created with key interactivity using Figma. The prototype includes elements such as text, pictures, or form. All pages were designed with a cohesive layout. Hence, it makes users easier to navigate to their target. The pivotal point is that participants can go through all tasks of scenarios with this prototype.</div>
+                <div class="col-md-12 mb-4">
+                    <a href="https://reurl.cc/NZKQg6" id="link">
+                        Review Protype on Figma
+                    </a>
+                </div>
+                <div class="col-md-12"><img src="img/am_review10.png" alt=""></div>
+            </div>
+        </div>
+        <div class="container-fluid article am bg_dark mb-7">
+            <div class="fluid_container">
+                <div class="row prototype_result" id="Result">
+                    <div class="col-md-12 mb-4 text-center">
+                        <h2>PROTOTYPE TESTING RESULT</h2>
+                    </div>
+                    <div class="col-md-12 mb-4 txt">For the sake of resolving the issues identified in phase one, the prototype was created with proposed solutions and went through usability testing again. The proposed solutions have a significant effect to increase overall user satisfaction. First of all, <I><b>participant average task completion time was at least 50% decreased in the prototype testing</b></I>. Moreover, <I><b>participants were able to achieve tasks in all scenarios. </b></I></div>
+                    <div class="col-md-12">
+                        <ul>
+                            <li>
+                                <div class="percentage">100%</div>
+                                <div class="txt">Participants can complete the tasks</div>
+                            </li>
+                            <li>
+                                <div class="percentage">100%</div>
+                                <div class="txt">Participants were confused after clicking the "find the shelter" button and being converted to the shelter website</div>
+                            </li>
+                            <li>
+                                <div class="percentage">100%</div>
+                                <div class="txt">Participants comment that the program pages are too long to find the donation button</div>
+                            </li>
+                            <li>
+                                <div class="percentage">22.5 <span>Seconds</span></div>
+                                <div class="txt">Average task completion</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container article am">
+            <div id="Recommendations">
+                <div class="row mb-5">
+                    <div class="col-md-12 mb-4">
+                        <h2>RECOMMENDATIONS</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mb-7 fade-in-right">
+                    <div class="col-md-6">
+                        <div class="problem mb-2"># Cannot locate pages</div>
+                        <h3 class="mb-2">Modify information architecture</h3>
+                        <div class="txt">It would be recommended to add the item of “Animal Adoption” to the menu due to participants cannot locate information about dog/cat adoption. In the prototype version, this solution allows participants able to locate the adoption information directly through the menu. Even though the average time completion from prototype testing was the same as published site testing, participants did not enter the irrelevant page.
+                        </div>
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="img/am_review12.png" alt="">
+                    </div>
+                </div>
+                <div class="row mb-7">
+                    <div class="col-md-12 mb-4">
+                        <div class="problem mb-2"># Cannot locate pages</div>
+                        <h3 class="mb-2">Make a descriptive, concise navigation</h3>
+                        <div class="txt">Since participants cannot locate tax and financial information, it would be recommended to place descriptive, concise navigation for solving those issues. For example, in the published site testing, 2 out of 5 participants cannot locate the tax form. The average task completion time is 120 seconds. These phenomena are attributed to the unfamiliarity of the wording of "Government" on the navigation bar. In the prototype version, the wording had been modified to “Financial Accountability”. As a result 92% improvement on average time to complete the task. Thus, it is recommended to simplify the navigation for users targeting key user goals identified in the study.
+                        </div>
+                    </div>
+                    <div class="col-md-12 image">
+                        <img src="img/am_review14.png" alt="">
+                    </div>
+                </div>
+                <div class="row mb-7">
+                    <div class="col-md-12 mb-4">
+                        <div class="problem mb-2"># Unable or take time to find information by accessing banners</div>
+                        <h3 class="mb-2">Separate the button and banner</h3>
+                        <div class="txt">According to the result from task 4 in the published site testing, participants spend 45 seconds finding the donation banner. Moreover, there was 1 participant cannot complete the task. Therefore, this issue was recorded as a blocker Issue, which means it impacts users' goals seriously. In the prototype test, the issue was fixed by separating the button and banner into two sides. This makes the button clear and not be influenced by a fancy background. This solution is also executable to task 5. The average time to complete the task has 67% improvement.
+                        </div>
+                    </div>
+                    <div class="col-md-12 image">
+                        <img src="img/am_review13.png" alt="">
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mb-7 fade-in-right">
+                    <div class="col-md-6">
+                        <div class="problem mb-2"># Confused about 2 type of donation pages</div>
+                        <h3 class="mb-2">Make the design of the donation page consistent</h3>
+                        <div class="txt">According to the comment from 3 participants, there are two different donation forms on the published site which makes them confused. Moreover, this issue is not only pointed out by participants but also a result from the Heuristic Evaluation research. Hence, in the prototype version, this issue was fixed by creating a consistent design pattern.
+                        </div>
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="img/am_review15.png" alt="">
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mb-7 fade-in-right">
+                    <div class="col-md-6">
+                        <div class="problem mb-2"># inconsistent design guide</div>
+                        <h3 class="mb-2">Create a design guide for the website</h3>
+                        <div class="txt">Participants comment that the font size on the site is hard to read. This issue might be a reason for them enter to irrelevant pages when taking tasks. Therefore design guides for the font-size were created as follows:
+                        </div>
+                    </div>
+                    <div class="col-md-6 image">
+                        <img src="img/am_review16.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5" id="Next">
+                <div class="col-md-12 mb-4">
+                    <h2>NEXT STEPS</h2>
+                </div>
+                <div class="col-md-12 mb-2 txt">Overall, this study aimed to ameliorate user experience by conducting quantitative, qualitative, and usability research. The result from the phase of preliminary data collection provides a first glance at the American Humane website. After conducting the published site usability testing, can conclude the major issues of the site are caused by unclear wording on navigation, content, or title. Furthermore, the buttons on banners are not obvious and make users ignore them or spend a lot of time to find them. Fortunately, solutions carry out with prototypes solve those issues. They are:
+                </div>
+                <div class="col-md-12">
+                    <ul>
+                        <li class="mb-2">Modify information architecture</li>
+                        <li class="mb-2">Separate the button and banner</li>
+                        <li class="mb-2">Make a descriptive, concise navigation</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 mb-2">
+                    <h3>Additional considerations for improving usability?</h3>
+                </div>
+                <div class="col-md-12 txt">The solutions provided on previous pages can resolve major issues that impact users seriously. However, 2 out of 5 participants comment that pictures and their content title are unrelated on the animal rescue page when doing task 1. This issue was not tested in the prototype testing since user flow on the site needs to be improved before conducting visual design. Once the user flow is ameliorated, can observe this issue again. Perhaps the issue does not come from visual design problems. It could be caused by something else.</div>
+            </div>
+        </div>
+
     </article>
     <!--footer-->
     <footer>
@@ -402,70 +440,35 @@
             </a>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script type="text/javascript">
-        AOS.init();
-        //        slider
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            effect: 'fade',
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-        });
-
-    </script>
     <script type="text/javascript">
         var winW = $(window).width();
         console.log(winW);
         //找出左側菜單位置
-        function residemenu() {
-            var X = $('.bannerblock').offset().left;
-            $('.sidemenu').css("left", X);
-        };
+        //        function residemenu() {
+        // var X = $('.bannerblock').offset().left;
+        // $('.sidemenu').css("left", X);
+        // };
+
         //手機版menu
         $('.menu_btn').click(function() {
             $(this).toggleClass('active');
             $('.menubox_m').toggleClass('open');
             console.log('click');
         });
-        $(window).resize(function() {
-            residemenu();
-            if (winW <= 450) {
-                console.log("！");
-                $('#uiuxmenu .submenu').css('display', 'none');
-            }
-            console.log("視窗發生改變了喲！");
-        });
 
-        $(window).scroll(function() {
-            if ($(window).scrollTop() >= 600) {
-                $('.sidemenu').addClass('fixed-sidemenu');
-                $('.sidemenu div').addClass('visible-title');
-                $('.bannerblock').css("display", "block");
-                residemenu();
-            } else {
-                $('.sidemenu').removeClass('fixed-sidemenu');
-                $('.sidemenu div').removeClass('visible-title');
-                $('.bannerblock').css("display", "none");
-                $('.sidemenu').css("left", 0);
-            }
-        });
-
-        var num = 50;
-        //        $(window).bind('scroll', function() {
-        //            if ($(window).scrollTop() > num) {
-        //                $('.menu').addClass('fixed');
-        //            } else {
-        //                $('.menu').removeClass('fixed');
-        //            }
-        //        });
+        //        $(window).scroll(function() {
+        // if ($(window).scrollTop() >= 600) {
+        // $('.sidemenu').addClass('fixed-sidemenu');
+        // $('.sidemenu div').addClass('visible-title');
+        // $('.bannerblock').css("display", "block");
+        // residemenu();
+        // } else {
+        // $('.sidemenu').removeClass('fixed-sidemenu');
+        // $('.sidemenu div').removeClass('visible-title');
+        // $('.bannerblock').css("display", "none");
+        // $('.sidemenu').css("left", 0);
+        // }
+        // });
 
     </script>
 </body>

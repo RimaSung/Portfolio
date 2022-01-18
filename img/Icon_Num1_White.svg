@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon_Num1</title>
+    <defs>
+        <path d="M34.368,39.48 L34.368,38.752 C33.042,38.726 32.73,38.674 32.366,38.388 C31.898,38.024 31.742,37.374 31.742,35.788 L31.742,26.61 C31.742,24.088 31.82,21.904 31.976,20.058 C30.26,20.37 28.362,20.63 25.892,20.838 L25.892,21.566 L26.594,21.566 C27.92,21.566 28.258,21.696 28.362,22.268 L28.3697898,22.3032302 L28.3697898,22.3032302 L28.3830494,22.3674816 C28.4146482,22.5350582 28.4181053,22.7113684 28.44,23.828 L28.44,35.788 C28.44,37.452 28.258,38.128 27.66,38.44 C27.27,38.674 26.906,38.726 25.71,38.752 L25.71,39.48 L34.368,39.48 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon_Num1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" fill-rule="nonzero" fill="#ffffff">
+            <use xlink:href="#path-1"></use>
+            <use xlink:href="#path-1"></use>
+        </g>
+        <circle id="Oval" stroke="#ffffff" stroke-width="2" cx="30" cy="30" r="29"></circle>
+    </g>
+</svg>
