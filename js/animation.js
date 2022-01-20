@@ -1,33 +1,107 @@
 $(document).ready(function () {
-    //Init ScropMagic
+  //make timeline
+  var bannerIn = new TimelineMax();
+
+  bannerIn
+      .to('#bannerIn', 1, {
+        scale: 1.2,
+        transformOrigin: 'center bottom',
+        ease: Linear.easeInOut,
+        opacity: 0,
+      });
+
+  var controller = new ScrollMagic.Controller();
+
+  //Init  ScropMagic
+  var banner = new ScrollMagic.Scene({
+        triggerElement: '#bannerIn',
+        triggerHook: 0,
+        duration: '100%',
+      })
+
+    .setTween(bannerIn)
+
+    // .addIndicators()
+    .addTo(controller);
+
+  //make timeline
+  $('.section').each(function () {
+    var titleInElement = $(this).find('h2');
+
+    var animation2 = new TimelineMax();
+
+    animation2
+      .to(titleInElement, 0.5, {
+        y: '0%',
+        ease: 'expo.out',
+      });
+
     var controller = new ScrollMagic.Controller();
 
-    //loop through all elements with a class fade-in
-    $('.animation').each(function () {
-        //indicate var to class for each elements
-        var fadeIn = $(this).find('.fadeIn');
-        var fadeInRight = $(this).find('.fadeInRight');
-        var animationIn = new TimelineMax();
+    //Init  ScropMagic
+    var scene2 = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.8,
+      })
 
-        //animation perform
-        animationIn
-            .fromTo(fadeIn, 0.3, {
-                autoAlpha: 0,
-                scale: 0.6,
-                y: '+=30',
-                ease: Linear.easeNone
-            })
+    .setTween(animation2)
 
-        // build a scene
-        var scene = new ScrollMagic.Scene({
-                triggerElement: this,
-                //triggerHook: 0.8,
-                //triggerElement: '.animation1'
-            })
-            .addIndicators()
-            .setTween(animationIn).addTo(controller); //trigger a TweenMax tween
+    // .addIndicators()
+    .addTo(controller);
 
-        //.setClassToggle('.animation', 'fade-in') //add class to element
+  });
 
-    });
+  //make timeline
+  $('.fadeIn').each(function () {
+    // var fadeInElement = $(this).find('.fadeIn');
+
+    var animation = new TimelineMax();
+
+    animation
+      .from(this, 0.3, {
+        opacity: 0,
+        ease: Linear.easeInOut,
+      });
+
+    var controller = new ScrollMagic.Controller();
+
+    //Init  ScropMagic
+    var scene1 = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.8,
+      })
+
+    .setTween(animation)
+
+    // .addIndicators()
+    .addTo(controller);
+
+  });
+
+  // $('#TitleIn').each(function () {
+  //   var fadeInTitle = $(this).find('#TitleIn');
+  //
+  //   var controllerForTitle = new TimelineMax();
+  //
+  //   titleAnimation
+  //   .from(this, 0.3, {
+  //         scale: 0,
+  //         opacity: 0,
+  //         ease: Linear.easeInOut,
+  //       });
+  //
+  //   var titleAnimation = new ScrollMagic.Controller();
+  //
+  //   //Init  ScropMagic
+  //   var scene2 = new ScrollMagic.Scene({
+  //       triggerElement: this,
+  //       triggerHook: 0.7,
+  //     })
+  //
+  //   .setTween(titleAnimation)
+  //   .addIndicators()
+  //   .addTo(controllerForTitle);
+  //
+  // });
+
 });
