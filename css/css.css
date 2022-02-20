@@ -190,7 +190,6 @@ nav li.uiux:hover .submenu {
 }
 
 nav .menubox_m>ul {
-  list-style: none;
   text-align: left;
   padding: 15% 6%;
   font-size: 1.25rem;
@@ -203,7 +202,6 @@ nav .menubox_m ul li a {
 }
 
 .uiux .subui {
-  list-style: none;
   text-align: left;
 }
 
@@ -286,7 +284,7 @@ nav .menubox_m>ul>li:last-child {
 }
 
 #ind_about {
-  font-family: 'Inter';
+  font-family: 'proxima-nova';
   font-weight: 700;
   font-size: 2.2rem;
   letter-spacing: 0px;
@@ -295,22 +293,20 @@ nav .menubox_m>ul>li:last-child {
 
 #ind_about .tags {
   font-size: 16px;
-  list-style: none;
   line-height: 1.8;
-  padding-left: 0px;
   color: var(--gray);
 }
 .project_name{
   font-size: 1.8rem;
   font-weight: 600;
   width: 100%;
-  font-family: 'Inter';
+  font-family: 'proxima-nova';
   letter-spacing: 0px;
   color: var(--gray-dark);
   line-height: 1.2;
 }
 .sub_project_name{
-  font-family: 'Inter';
+  font-family: 'proxima-nova';
   font-weight: 600;
 }
 
@@ -644,11 +640,6 @@ footer .linkedin a {
   left: 50%;
   margin-left: -34%;
 }
-
-.more_menu li {
-  list-style: none;
-}
-
 .more_menu li a {
   color: #ffffff;
 }
@@ -685,7 +676,7 @@ footer .linkedin a {
 /*各專案顏色設定----結束*/
 /*article*/
 .article #Intro h1 {
-  font-family: 'Inter';
+  font-family: 'proxima-nova';
   font-weight: 700;
   font-size: 3.8rem;
   letter-spacing: 0px;
@@ -697,7 +688,7 @@ footer .linkedin a {
   font-size: 2.8rem;
   font-weight: 600;
   width: 100%;
-  font-family: 'Inter';
+  font-family: 'proxima-nova';
   letter-spacing: 0px;
   color: var(--gray-dark);
   line-height: 1.2;
@@ -707,13 +698,13 @@ footer .linkedin a {
   font-size: 1.8rem;
   font-weight: 600;
   width: 100%;
-  font-family: 'Inter';
+  font-family: 'proxima-nova';
   letter-spacing: 0px;
   color: var(--gray-dark);
   line-height: 1.2;
 }
 
-.wvt.article h3 {
+article#wvt h3 {
   color: var(--orange);
 }
 
@@ -733,16 +724,11 @@ footer .linkedin a {
   font-size: 14px;
 }
 
-.article .list ul {
-  list-style: none;
-  padding-left: 0;
-}
-
 .article .description {
   font-size: 16px;
 }
 
-.wvt .highlight_txt {
+#wvt .highlight_txt {
   background-color: var(--white);
   color: var(--dark);
   /*    background-color: #F75C2F;*/
@@ -753,13 +739,13 @@ footer .linkedin a {
   /*    background-color: var(--white);*/
   padding: 0.3rem 0.5rem;
   font-weight: 600;
-  font-family: 'Inter';
+  font-family: 'proxima-nova';
   border-radius: 6px;
   /*    font-size: 1rem;*/
 }
 
 .article .subtitle {
-  font-family: 'Inter';
+  font-family: 'proxima-nova';
   font-weight: 600;
 }
 
@@ -767,7 +753,7 @@ footer .linkedin a {
   color: var(--brown);
 }
 
-.wvt #Solutions .problem {
+#wvt #Solutions .problem {
   color: var(--orange);
 }
 
@@ -778,11 +764,11 @@ footer .linkedin a {
 #Solutions .problem,
 #Recommendations .problem {
   font-weight: 600;
-  font-family: 'Inter';
+  font-family: 'proxima-nova';
   font-size: 16px;
 }
 
-.wvt #link {
+#wvt #link {
   border-color: #F75C2F;
   color: #F75C2F;
 }
@@ -822,6 +808,12 @@ footer .linkedin a {
 }
 
 /*wvt Research*/
+article .bg_white {
+  background-color: var(--white);
+}
+article .bg_dark .txt{
+  color: var(--white);
+}
 article .bg_dark {
   background-color: var(--orange);
 }
@@ -830,10 +822,6 @@ article .bg_dark {
   max-width: 960px;
   margin: 0 auto;
   padding: 70px 15px;
-}
-
-article .bg_dark .txt{
-  color: var(--white);
 }
 
 .painpoint {
@@ -845,11 +833,6 @@ article .bg_dark .txt{
 .painpoint.h100 {
   height: 100%;
 }
-
-.painpoint ul {
-  margin: 0;
-  padding: 0;
-}
 /* wvt Prototype */
 .prototype{
   background-color: var(--gray-light);
@@ -858,14 +841,24 @@ article .bg_dark .txt{
 #Solutions .item {
   font-size: 1rem;
 }
-
-/*Goals*/
-.item .numicon {
-  width: 34px;
+.item .numicon{
+  width: 32px;
 }
-
+/*wvt Goals*/
+#Goal .item .numicon {
+  display: inline-block;
+}
+#Goal .item .txt{
+  display: inline-block;
+}
+#Achievement .achieve{
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--gray-dark);
+}
 /*am*/
-.article ul {
+.am .article ul {
   padding-left: 20px;
 }
 
@@ -874,20 +867,11 @@ article .bg_dark .txt{
   border-color: var(--blue);
 }
 
-.am #Goals ul {
-  padding: 0;
-}
-
 .am .light_bg {
   padding: 1rem 2rem;
   border-radius: 6px;
   background-color: var(--blue-light);
 }
-
-.am #Goals li {
-  list-style: none;
-}
-
 .am #Goals .numicon,
 .am #Goals .txt {
   display: inline-block;
@@ -930,11 +914,9 @@ article .bg_dark h2 {
 
 .am .test_result ul,
 .am .prototype_result ul {
-  font-family: 'Inter';
+  font-family: 'proxima-nova';
   font-weight: 700;
   letter-spacing: 0px;
-  padding: 0;
-  list-style: none;
 }
 
 .am .prototype_result li {
@@ -1008,7 +990,6 @@ article .bg_dark h2 {
 }
 
 .persona_box ul {
-  list-style-type: none;
   padding-inline-start: 0px;
 }
 
@@ -1254,11 +1235,6 @@ article .bg_dark h2 {
 }
 
 /*sidemenu---開始*/
-.sidemenu ul {
-  list-style: none;
-  padding-left: 0px;
-}
-
 .sidemenu a {
   color: #606060;
 }
