@@ -649,14 +649,6 @@ footer .linkedin a {
   background-color: #E5C0C9;
 }
 
-.article.upstudy .title {
-  color: #963f00;
-}
-
-.article.upstudy .txt span {
-  background-color: #f3dbca;
-}
-
 .article.health .title {
   color: #3256e0;
 }
@@ -749,7 +741,7 @@ article#wvt h3 {
   font-weight: 600;
 }
 
-.up #Solutions .problem {
+#up #Solutions .problem {
   color: var(--brown);
 }
 
@@ -816,9 +808,6 @@ article .bg_white {
 }
 article .bg_dark .txt{
   color: var(--white);
-}
-article .bg_dark {
-  background-color: var(--orange);
 }
 
 .fluid_container {
@@ -949,8 +938,36 @@ article .bg_dark h2 {
 }
 
 /*up-study*/
-.up.bg_dark {
+#up .quote{
+  margin: 2rem 0 2.2rem;
+  font-size: 1.2rem;
+  padding: 2rem;
+  background: var(--gray-light);
+  border-radius: 6px;
+  /* box-shadow:
+    12px 12px 16px 0 rgba(0, 0, 0, 0.1),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3); */
+}
+#up #Challenge .numicon img{
+    width: 32px;
+    margin-right:8px;
+    display: inline-block;
+}
+#up #Challenge .challenge_name{
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+#up.bg_dark {
   background-color: var(--brown);
+}
+#up #Audience .expectation{
+  margin-right: 2rem;
+}
+#up #Audience .numicon img{
+  width: 32px;
 }
 
 /*下一頁設定---開始*/
@@ -1096,7 +1113,7 @@ article .bg_dark h2 {
 }
 
 /*upstudy*/
-.upstudy .link {
+/* .upstudy .link {
   color: #F39F00;
   position: relative;
   font-weight: bold;
@@ -1126,7 +1143,7 @@ article .bg_dark h2 {
 .upstudy .process {
   width: 70%;
   margin: 0 auto;
-}
+} */
 
 .article .ana_com {
   margin-bottom: 50px;
