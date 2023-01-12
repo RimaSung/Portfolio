@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --background: #1b1c2b;
+  --background: #2a318f;
   --black: #292929;
   --beige: #fcfaf2;
   --beige-darker:#efebdc;
@@ -176,9 +176,9 @@ a {
   background-color: transparent;
 }
 
-a:hover {
-  /* color: #0056b3; */
-}
+/* a:hover {
+  color: #0056b3;
+} */
 
 a:not([href]) {
   color: inherit;
