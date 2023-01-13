@@ -442,8 +442,6 @@ footer .contact img {
   transition: 0.6s;
 }
 
-@media (max-width: 786px) {
-}
 
 .works_img {
   position: relative;
@@ -498,7 +496,7 @@ footer .contact img {
   width: 100%;
   font-family: "proxima-nova";
   letter-spacing: 0px;
-  color: var(--gray-dark);
+  color: var(--beige);
   line-height: 1.2;
 }
 
@@ -544,11 +542,11 @@ footer .contact img {
 }
 
 #up #Solutions .problem {
-  color: var(--brown);
+  color: var(--beige);
 }
 
 #wvt #Solutions .problem {
-  color: var(--orange);
+  color: var(--beige);
 }
 #wvt #Research .list {
   padding-left: 20px;
@@ -556,7 +554,7 @@ footer .contact img {
 }
 
 .am #Recommendations .problem {
-  color: var(--blue);
+  color: var(--beige);
 }
 
 #Solutions .problem,
@@ -608,6 +606,10 @@ footer .contact img {
 article .bg_white {
   background-color: var(--white);
 }
+
+article .bg_white h2 {
+  color: var(--gray-dark);
+}
 article .bg_dark .txt {
   color: var(--white);
 }
@@ -622,6 +624,7 @@ article .bg_dark .txt {
   padding: 1rem 1.2rem;
   background-color: var(--orange-light);
   border-radius: 6px;
+  color: var(--gray-dark);
 }
 
 .painpoint.h100 {
@@ -630,7 +633,13 @@ article .bg_dark .txt {
 /* wvt Prototype */
 .prototype {
   background-color: var(--gray-light);
+  color: var(--gray-dark);
 }
+
+.prototype h2 {
+  color: var(--gray-dark);
+}
+
 /*Solutions*/
 #Solutions .item {
   font-size: 1rem;
@@ -651,6 +660,9 @@ article .bg_dark .txt {
   line-height: 1.2;
   color: var(--gray-dark);
 }
+#Achievement .txt {
+  color: var(--gray-dark);
+}
 /*am*/
 .am .article ul {
   padding-left: 20px;
@@ -661,10 +673,16 @@ article .bg_dark .txt {
   border-color: var(--blue);
 }
 
+/* .am #link: */
+
 .am .light_bg {
   padding: 1rem 2rem;
   border-radius: 6px;
   background-color: var(--blue-light);
+  color: var(--gray-dark);
+}
+.am .light_bg h3 {
+  color: var(--gray-dark);
 }
 .am #Goals .numicon,
 .am #Goals .txt {
@@ -688,7 +706,7 @@ article .bg_dark h2 {
 }
 
 .am #Recommendations h3 {
-  color: var(--blue);
+  color: var(--beige);
 }
 
 .am.bg_dark {
@@ -746,6 +764,7 @@ article .bg_dark h2 {
   padding: 2rem;
   background: var(--gray-light);
   border-radius: 6px;
+  color: var(--gray-dark);
   /* box-shadow:
     12px 12px 16px 0 rgba(0, 0, 0, 0.1),
     -8px -8px 12px 0 rgba(255, 255, 255, 0.3); */
@@ -1082,11 +1101,12 @@ article .bg_dark h2 {
 @media (min-width: 1028px) {
 }
 
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   #Solutions .architecture,
   #Solutions .information,
   .am .inventory,
   .am .personas {
+    display: inline-grid;
     order: 2;
   }
 
@@ -1136,5 +1156,17 @@ article .bg_dark h2 {
 @media (max-width: 960px) {
   .am .test_result li {
     width: 49%;
+  }
+}
+
+
+
+/* By sky */
+
+@media (max-width: 768px){
+  .row.mb-8.work_content .work_content_txt {
+    display: inline-grid;
+    order: 2;
+    color:#f39f00;
   }
 }
