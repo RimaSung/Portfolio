@@ -77,31 +77,4 @@ $(document).ready(function () {
     .addTo(controller);
 
   });
-
-  // $('#TitleIn').each(function () {
-  //   var fadeInTitle = $(this).find('#TitleIn');
-  //
-  //   var controllerForTitle = new TimelineMax();
-  //
-  //   titleAnimation
-  //   .from(this, 0.3, {
-  //         scale: 0,
-  //         opacity: 0,
-  //         ease: Linear.easeInOut,
-  //       });
-  //
-  //   var titleAnimation = new ScrollMagic.Controller();
-  //
-  //   //Init  ScropMagic
-  //   var scene2 = new ScrollMagic.Scene({
-  //       triggerElement: this,
-  //       triggerHook: 0.7,
-  //     })
-  //
-  //   .setTween(titleAnimation)
-  //   .addIndicators()
-  //   .addTo(controllerForTitle);
-  //
-  // });
-
 });

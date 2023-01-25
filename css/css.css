@@ -1,7 +1,3 @@
-.txt {
-  color: red;
-}
-
 html {
   image-rendering: -webkit-optimize-contrast;
 }
@@ -17,17 +13,13 @@ img {
   border-bottom: 1px solid var(--beige);
 }
 
-/* Background Color */
+/* Background Color Start */
 .section_bg_purple {
   background-color: var(--purple);
 }
 
 .section_bg_beige {
   background-color: var(--beige);
-}
-
-.section_bg_beige p {
-  color: var(--black);
 }
 
 .section_bg_beige_darker {
@@ -38,7 +30,8 @@ img {
   background-color: var(--yellow);
 }
 
-/* Font */
+/* Background Color End*/
+/* Font Start*/
 h1 {
   text-transform: uppercase;
 }
@@ -54,6 +47,7 @@ h2 {
 }
 
 .section_bg_yellow p,
+.section_bg_beige p,
 .section_bg_beige_darker p {
   color: var(--black);
 }
@@ -62,7 +56,8 @@ h2 {
   color: var(--beige);
 }
 
-/* Button */
+/* Font End */
+/* Button Start*/
 .numicon {
   width: 32px;
 }
@@ -119,13 +114,6 @@ h2 {
 
 nav {
   z-index: 111;
-}
-
-.fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.6);
 }
 
 .nav a {
@@ -436,21 +424,6 @@ footer .contact img {
   color: var(--pink);
 }
 
-.img_description {
-  font-size: 0.9rem;
-  color: #828282;
-}
-
-.img_description:before {
-  background-image: url("../img/Icon_arrow_up.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  display: inline-block;
-  width: 20px;
-  height: 14px;
-  content: "";
-}
-
 /*Animation*/
 .overhiddenBox {
   overflow: hidden;
@@ -595,16 +568,6 @@ footer .contact img {
 }
 
 /*下一頁設定---結束*/
-/* Health */
-.health_ana {
-  width: 80%;
-  margin: 30px auto 0;
-}
-
-.health .step2 .col-md-6,
-.health .step2 .col-md-12 {
-  padding: 50px 48px;
-}
 
 .step4_ana img {
   margin: 30px auto 0;
@@ -642,16 +605,6 @@ footer .contact img {
   width: 70%;
 }
 
-.container-fluid img {
-  margin-top: 10px;
-}
-
-/*lab*/
-.lab .step1 .cir {
-  width: 70%;
-  margin: 0 auto;
-}
-
 @media (max-width: 1900px) {}
 
 @media (max-width: 1080px) {}
@@ -669,13 +622,6 @@ footer .contact img {
 }
 
 @media (max-width: 768px) {
-  .mainpic {
-    margin-bottom: 12rem;
-  }
-
-  .mainpic .normalBtn {
-    margin-top: 60px;
-  }
 
   .mousebox {
     width: 25px;
@@ -698,19 +644,9 @@ footer .contact img {
   }
 }
 
-@media (max-width: 576px) {
-  .mainpic {
-    height: 25rem;
-  }
-}
+@media (max-width: 576px) {}
 
-@media screen and (min-width: 544px) and (max-width: 767.9px) {
-
-  .drupal,
-  .profile {
-    order: 2;
-  }
-}
+@media screen and (min-width: 544px) and (max-width: 767.9px) {}
 
 @media screen and (max-width: 543.9px) {}
 
@@ -741,8 +677,7 @@ footer .contact img {
 
 @media (max-width: 768px) {
 
-  #Solutions .architecture,
-  #Solutions .information,
+  .order2,
   .am .inventory,
   .am .personas {
     display: inline-grid;
@@ -767,6 +702,17 @@ footer .contact img {
 /* By sky */
 
 @media (max-width: 768px) {
+
+  h1,
+  .h1 {
+    font-size: 2.6rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2.4rem;
+  }
+
   .row.mb-8.work_content .work_content_txt {
     display: inline-grid;
     order: 2;

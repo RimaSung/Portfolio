@@ -73,7 +73,7 @@ body {
   line-height: 1.6;
   color: var(--beige);
   text-align: left;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.4px;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
