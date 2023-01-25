@@ -487,7 +487,6 @@ footer .contact img {
 }
 
 /* UrCosme Start */
-
 #ur #achievement .numicon {
   display: inline-block;
   margin-right: 8px;
@@ -564,6 +563,20 @@ footer .contact img {
 
 #up #Audience .numicon img {
   width: 100px;
+}
+
+#up ul .numicon {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+#up ul p {
+  display: inline-block;
+}
+
+#up .list {
+  padding-left: 20px;
+  list-style: disc;
 }
 
 /* Up Study End */
