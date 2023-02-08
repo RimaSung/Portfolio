@@ -32,7 +32,7 @@ let options = {
   easing: 'ease',
   duration: 400,
   disable: false,
-  once: false,
+  once: true,
   mirror: false,
   anchorPlacement: 'top-bottom',
   startEvent: 'DOMContentLoaded',

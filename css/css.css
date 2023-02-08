@@ -41,6 +41,7 @@ h2 {
 }
 
 .section_bg_beige h2,
+.section_bg_beige h3,
 .section_bg_yellow h2,
 .section_bg_beige_darker h2 {
   color: var(--black);
@@ -48,10 +49,12 @@ h2 {
 
 .section_bg_yellow p,
 .section_bg_beige p,
+.section_bg_beige li,
 .section_bg_beige_darker p {
   color: var(--black);
 }
 
+.section_bg_purple h3,
 .section_bg_purple p {
   color: var(--beige);
 }
@@ -310,6 +313,33 @@ nav .menubox_m>ul>li:last-child {
   margin: 20px;
 }
 
+.project_hover h2,
+.project_hover p {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.section_bg_beige .project_hover:hover h2,
+.section_bg_beige .project_hover:hover p {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.project_hover:hover h2,
+.project_hover:hover p {
+  color: var(--yellow);
+}
+
+.section_bg_beige .project_hover:hover h2,
+.section_bg_beige .project_hover:hover p {
+  color: var(--purple);
+}
+
+
 /* Banner Start */
 .mousebox {
   width: 24px;
@@ -459,20 +489,31 @@ footer .contact img {
   margin: 1rem 0;
 }
 
-/* UrCosme Start */
-#ur #achievement .numicon {
-  display: inline-block;
-  margin-right: 8px;
+.list_yellow li {
+  position: relative;
 }
 
-#ur #achievement p {
-  display: inline-block;
+.list_yellow li:before {
+  content: "";
+  border-radius: 100%;
+  background-color: var(--yellow);
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 10.5px;
+  left: 0;
 }
+
+.list_yellow li {
+  padding-left: 16px;
+}
+
+/* UrCosme Start */
 
 /* UrCosme End */
 /* American Humane Start */
 #am #analysis .article {
-  background-image: url(../img/am_review2.png);
+  background-image: url(../img/am/research1.png);
   background-repeat: no-repeat;
   padding-bottom: 6.2rem;
   background-size: 60%;
@@ -516,6 +557,10 @@ footer .contact img {
   border-radius: 6px;
 }
 
+#am #usability .list li {
+  color: var(--beige);
+}
+
 #am #usability .list {
   padding-left: 20px;
   list-style: disc;
@@ -543,16 +588,24 @@ footer .contact img {
   margin-right: 8px;
 }
 
-#up ul p {
-  display: inline-block;
-}
-
-#up .list {
-  padding-left: 20px;
-  list-style: disc;
-}
-
 /* Up Study End */
+/* Lab Start */
+#lab .result {
+  display: table;
+  margin: 0 auto;
+}
+
+#lab .result li {
+  display: table-cell;
+  text-align: center;
+}
+
+#lab .result img,
+#lab .community img {
+  width: 80%;
+}
+
+/* Lab End */
 /*下一頁設定---開始*/
 .nextarticle {
   margin: 0 auto;
