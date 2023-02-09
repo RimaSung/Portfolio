@@ -1,5 +1,6 @@
 html {
   image-rendering: -webkit-optimize-contrast;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -57,6 +58,32 @@ h2 {
 .section_bg_purple h3,
 .section_bg_purple p {
   color: var(--beige);
+}
+
+.project_hover h2,
+.project_hover p {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.section_bg_beige .project_hover:hover h2,
+.section_bg_beige .project_hover:hover p {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.project_hover:hover h2,
+.project_hover:hover p {
+  color: var(--yellow);
+}
+
+.section_bg_beige .project_hover:hover h2,
+.section_bg_beige .project_hover:hover p {
+  color: var(--purple);
 }
 
 /* Font End */
@@ -270,7 +297,7 @@ nav .menubox_m>ul>li:last-child {
   }
 }
 
-/* Index */
+/* Index Start*/
 #ind_about {
   letter-spacing: 1px;
   color: var(--beige);
@@ -313,33 +340,7 @@ nav .menubox_m>ul>li:last-child {
   margin: 20px;
 }
 
-.project_hover h2,
-.project_hover p {
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.section_bg_beige .project_hover:hover h2,
-.section_bg_beige .project_hover:hover p {
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.project_hover:hover h2,
-.project_hover:hover p {
-  color: var(--yellow);
-}
-
-.section_bg_beige .project_hover:hover h2,
-.section_bg_beige .project_hover:hover p {
-  color: var(--purple);
-}
-
-
+/* Index End*/
 /* Banner Start */
 .mousebox {
   width: 24px;
