@@ -40,7 +40,7 @@ h1 {
 h2 {
   text-transform: uppercase;
 }
-
+.section_bg_beige h1,
 .section_bg_beige h2,
 .section_bg_beige h3,
 .section_bg_yellow h2,
@@ -48,19 +48,24 @@ h2 {
   color: var(--black);
 }
 
+h5{
+  display: block;
+  margin: 0px;
+}
 .section_bg_yellow p,
 .section_bg_beige p,
 .section_bg_beige li,
 .section_bg_beige_darker p {
   color: var(--black);
 }
-
+.section_bg_purple h2,
 .section_bg_purple h3,
 .section_bg_purple p {
   color: var(--beige);
 }
 
-.project_hover h2,
+
+.project_hover h3,
 .project_hover p {
   -webkit-transition: 0.6s;
   -moz-transition: 0.6s;
@@ -68,22 +73,13 @@ h2 {
   transition: 0.6s;
 }
 
-.section_bg_beige .project_hover:hover h2,
-.section_bg_beige .project_hover:hover p {
+.project_hover:hover h3,
+.project_hover:hover p {
+  color: var(--purple);
   -webkit-transition: 0.6s;
   -moz-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
-}
-
-.project_hover:hover h2,
-.project_hover:hover p {
-  color: var(--yellow);
-}
-
-.section_bg_beige .project_hover:hover h2,
-.section_bg_beige .project_hover:hover p {
-  color: var(--purple);
 }
 
 /* Font End */
@@ -94,7 +90,7 @@ h2 {
 
 /* Menu */
 #navigation a {
-  color: var(--beige);
+  color: var(--black-pearl);
 }
 
 .menu {
@@ -103,7 +99,7 @@ h2 {
 }
 
 .menu .logo {
-  width: 120px;
+  width: 74px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -300,7 +296,7 @@ nav .menubox_m>ul>li:last-child {
 /* Index Start*/
 #ind_about {
   letter-spacing: 1px;
-  color: var(--beige);
+  color: var(--purple);
 }
 
 #ind_about .container {
@@ -313,33 +309,21 @@ nav .menubox_m>ul>li:last-child {
   position: relative;
 }
 
-#ind_about .status::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 16px;
-  right: -55px;
-  width: 45px;
-  height: 2px;
-  background-color: var(--beige);
-}
-
 #ind_about .circle {
   border-radius: 100%;
   background-color: var(--yellow);
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   right: 15px;
   top: -6rem;
 }
 
 #ind_about .circle .arrow_down {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   margin: 20px;
 }
-
 /* Index End*/
 /* Banner Start */
 .mousebox {
@@ -731,7 +715,6 @@ footer .contact img {
 
 @media (max-width: 768px) {
 
-  .order2,
   .am .inventory,
   .am .personas {
     display: inline-grid;
@@ -771,4 +754,12 @@ footer .contact img {
     display: inline-grid;
     order: 2;
   }
+}
+#workexperience li{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+border-bottom: 1px solid var(--gray);
+}
+#workexperience li:last-child{
+  border-bottom: 0px;
 }

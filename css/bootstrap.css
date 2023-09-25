@@ -1,31 +1,15 @@
-/*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   /* --background: #1b1c2b; */
   --black: #292929;
+  --gray: #DEDEDE;
   --black-pearl: #1b1c2b;
+  --bg-primary:#F8F8F8;
   --purple: #2e36cb;
   --pink: #e57ba6;
-  --beige: #fcfaf2;
+  --beige: #ffffff;
   --beige-darker: #efebdc;
   --yellow: #ffcb30;
 
-
-
-  --red: #dc3545;
-  --orange: red;
-  --gray-light: red;
-  --gray: red;
-  --gray-dark: red;
-  --primary: red;
-  --info: red;
-  --warning: red;
-  --light: red;
-  --dark: red;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -64,16 +48,16 @@ section {
 }
 
 body {
-  background: var(--black-pearl);
   margin: 0;
   font-family: "proxima-nova", "Segoe UI", Roboto, "Helvetica Neue", Arial,
     "Noto Sans", sans-serif, "Apple Color Emoji";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--beige);
   text-align: left;
   letter-spacing: 0.4px;
+  background-color:  var(--bg-primary);
+  color: var(--black-pearl);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -89,9 +73,7 @@ hr {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4{
   margin: 0;
   margin: 0rem;
 }
@@ -110,12 +92,6 @@ abbr[data-original-title] {
   border-bottom: 0;
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
-}
-
-address {
-  margin-bottom: 1rem;
-  font-style: normal;
-  line-height: inherit;
 }
 
 ol,
@@ -173,7 +149,7 @@ sup {
 }
 
 a {
-  color: var(--beige);
+  color: var(--black-pearl);
   text-decoration: none;
   background-color: transparent;
 }
@@ -370,35 +346,16 @@ template {
   display: none !important;
 }
 
-/*
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-*/
-
 h1,
 .h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: 600;
   line-height: 1.2;
 }
 
 h2,
 .h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -417,15 +374,9 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1.25rem;
-
+  font-size: 1.2rem;
 }
 
-h6,
-.h6 {
-  font-size: 1rem;
-  font-weight: 300;
-}
 
 .lead {
   font-size: 1.25rem;
@@ -616,7 +567,7 @@ pre code {
 
 @media (min-width: 1920px) {
   .container {
-    max-width: 1440px;
+    max-width: 1200px;
   }
 }
 
@@ -677,7 +628,7 @@ pre code {
   .container-md,
   .container-lg,
   .container-xl {
-    max-width: 1440px;
+    max-width: 1200px;
   }
 }
 
@@ -9043,7 +8994,7 @@ button.bg-dark:focus {
 
 .mb-1,
 .my-1 {
-  margin-bottom: 1rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .ml-1,

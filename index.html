@@ -33,44 +33,45 @@
 </head>
 
 <body>
-  <!-- Navigation Start-->
-  <nav id="navigation" class="container py-4">
-    <div class="menu navbar-right">
+    <!-- Navigation Start-->
+    <nav id="navigation" class="container py-3">
+      <div class="menu navbar-right">
+        <a href="index.html" class="logo"><img src="img/logo/rimalogo.svg" alt="" /></a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#ux_design">UI/UX DESIGN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#visual">VISUAL DESIGN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://drive.google.com/file/d/1qLz_yRlBP5_GhxIKV3LTt4vrJpoUTZsZ/view?usp=sharing" target="_blank">RESUME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" target="_blank">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="menu_m">
       <a href="index.html" class="logo"><img src="img/logo/rimalogo.svg" alt="" /></a>
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#ux_design">UI/UX DESIGN</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#visual">VISUAL DESIGN</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"
-            href="https://drive.google.com/file/d/1B6Xp5Zsex2WEh1itFGLp2bfJe27kCR-V/view?usp=sharing"
-            target="_blank">RESUME</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <nav class="menu_m">
-    <a href="index.html" class="logo"><img src="img/logo/rimalogo.svg" alt="" /></a>
-    <div class="menubox_m">
-      <ul>
-        <li>
-          <a class="nav-link" href="index.html">Projects</a>
-        </li>
-        <li>
-          <a class="nav-link" href="https://drive.google.com/file/d/1B6Xp5Zsex2WEh1itFGLp2bfJe27kCR-V/view?usp=sharing"
-            target="_blank">Resume</a>
-        </li>
-      </ul>
-    </div>
-    <div class="menu_btn">
-      <span class="top"></span>
-      <span class="middle"></span>
-      <span class="bottom"></span>
-    </div>
-  </nav>
+      <div class="menubox_m">
+        <ul>
+          <li>
+            <a class="nav-link" href="index.html">Projects</a>
+          </li>
+          <li>
+            <a class="nav-link" href="https://drive.google.com/file/d/1qLz_yRlBP5_GhxIKV3LTt4vrJpoUTZsZ/view?usp=sharing" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu_btn">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+    </nav>
+    <!-- Navigation End-->
   <!-- Navigation End-->
   <!-- Intro Start -->
   <section id="ind_about" class="pt-8 pb-6">
@@ -81,9 +82,6 @@
         <div class="circle">
           <lottie-player class="arrow_down" src="img/arrow_down.json" background="transparent" speed="1" loop autoplay>
           </lottie-player>
-        </div>
-        <div class="col-md-12">
-          <div class="status">STATUS</div>
         </div>
         <div class="col-md-12">
           <p>5 years design experience</p>
@@ -101,12 +99,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 mb-1 text-center">
-            <h2 class="mb-1">UX Highlights</h2>
+            <h2 class="mb-1">Highlights</h2>
           </div>
         </div>
-        <div class="row mb-6 project_hover">
-          <div class="col-md-6 order2" data-aos="fade-up" data-aos-duration="1000">
-            <a href="wvt.html">
+        <div class="row mb-6">
+          <div class="col-md-6">
+            <a href="wvt.html" class="project_hover" data-aos="fade-up" data-aos-duration="200">
+              <div class="works_img mb-1" >
+                <img src="img/wvt/banner.gif" alt="" />
+              </div>
               <h3 class="mb-1">World Vision Taiwan</h3>
               <p>
                 A non-profit website went through 4 agile iterations to improve user
@@ -114,35 +115,25 @@
               </p>
             </a>
           </div>
-          <div class="col-md-6 mb-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <a href="wvt.html">
-              <div class="works_img">
-                <img src="img/wvt/banner.gif" alt="" />
+          <div class="col-md-6 mb-1">
+            <a href="finger_crossed.html" class="project_hover" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+              <div class="works_img mb-1">
+                <img src="img/up/banner.gif" alt="" />
               </div>
-            </a>
-          </div>
-        </div>
-        <div class="row mb-6 project_hover">
-          <div class="col-md-6 mb-1" data-aos="fade-up" data-aos-duration="1000">
-            <a href="american_humane.html">
-              <div class="works_img">
-                <img src="img/am/banner.gif" alt="" />
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <a href="american_humane.html">
-              <h3 class=" mb-1">American Humane</h3>
+              <h3 class="mb-1">Finger Crossed</h3>
               <p>
-                A summative evaluation intended to improve user experience on the American Humane
-                Website by identifying user needs and goals by conducting usability research
+                Scoped, estimated, and prioritized work to marketing and engineering teams in
+                executing digital product strategies, achieving a 40% Visitor-to-lead Conversion Rate
               </p>
             </a>
           </div>
         </div>
-        <div class="row project_hover">
-          <div class="col-md-6 order2" data-aos="fade-up" data-aos-duration="1000">
-            <a href="up_study.html">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="up_study.html" class="project_hover" data-aos="fade-up" data-aos-duration="200">
+              <div class="works_img mb-1">
+                <img src="img/up/banner.gif" alt="" />
+              </div>
               <h3 class="mb-1">Up Study</h3>
               <p>
                 Scoped, estimated, and prioritized work to marketing and engineering teams in
@@ -150,11 +141,16 @@
               </p>
             </a>
           </div>
-          <div class="col-md-6 mb-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <a href="up_study.html">
-              <div class="works_img">
-                <img src="img/up/banner.gif" alt="" />
+          <div class="col-md-6">
+            <a href="american_humane.html" class="project_hover" data-aos="fade-up" data-aos-duration="1000">
+              <div class="works_img mb-1">
+                <img src="img/am/banner.gif" alt="" />
               </div>
+              <h3 class=" mb-1">American Humane</h3>
+              <p>
+                A summative evaluation intended to improve user experience on the American Humane
+                Website by identifying user needs and goals by conducting usability research
+              </p>
             </a>
           </div>
         </div>
@@ -169,20 +165,8 @@
           </div>
         </div>
         <div class="row">
-          <!-- <div class="col-md-6 mb-6 project_hover" data-aos="fade-up" data-aos-duration="1000">
-            <a href="roche.html">
-              <div class="works_img mb-1">
-                <img src="img/roche/banner.jpg" alt="" />
-              </div>
-              <h2 class="mb-1">Roche</h2>
-              <p>
-                Improved UX in Field Engineering Specialists' laboratory workflow, focused on troubleshooting
-                search on the knowledge base system and the hardware installation in the field
-              </p>
-            </a>
-          </div> -->
-          <div class="col-md-4 mb-6 project_hover" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <a href="ur.html">
+          <div class="col-md-4 mb-6 ">
+            <a href="ur.html" class="project_hover" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <div class="works_img mb-1">
                 <img src="img/ur/banner_s.jpg" alt="" />
               </div>
@@ -193,8 +177,8 @@
               </p>
             </a>
           </div>
-          <div class="col-md-4 mb-6 project_hover" data-aos="fade-up" data-aos-duration="1000">
-            <a href="lab.html">
+          <div class="col-md-4 mb-6">
+            <a href="lab.html" class="project_hover" data-aos="fade-up" data-aos-duration="1000">
               <div class="works_img mb-1">
                 <img src="img/lab/banner_s.png" alt="" />
               </div>
@@ -205,8 +189,8 @@
               </p>
             </a>
           </div>
-          <div class="col-md-4 project_hover" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <a href="erp.html">
+          <div class="col-md-4">
+            <a href="erp.html" class="project_hover" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <div class="works_img mb-1">
                 <img src="img/erp/banner_s.jpg" alt="" />
               </div>
@@ -246,14 +230,10 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-7">
-          <h2>I'm Rima</h2>
-          <h2>UX Designer</h2>
-        </div>
-        <div class="col-md-5 contact">
+        <div class="col-md-12 contact">
           <div class="title">THANK YOU & Contact</div>
           <p>Thank you for taking the time to review my portfolio</p>
-          <p class="mb-2">Don't hesitate to contact me here:</p>
+          <p class="mb-1">Don't hesitate to contact me here:</p>
           <div class="contact_icon">
             <a href="mailto: ysung10@asu.edu">
               <img src="img/general/email.svg" />

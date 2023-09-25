@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Rima Portfolio" />
+  <meta name="author" content="Rima" />
+  <title>Rima Design Works</title>
+  <link rel="icon" type="image/ico" href="img/Icon/rimalogo_ico.svg" />
+  <!-- CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/grid.css" rel="stylesheet" />
+  <link href="css/css.css" rel="stylesheet" />
+  <!-- Animation-->
+  <script src="js/jquery-1.4.3.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TN2P9N71F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3TN2P9N71F');
+  </script>
+  <!-- Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/cqr5cle.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap");
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Start-->
+  <nav id="navigation" class="container py-3">
+    <div class="menu navbar-right">
+      <a href="index.html" class="logo"><img src="img/logo/rimalogo.svg" alt="" /></a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#ux_design">UI/UX DESIGN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#visual">VISUAL DESIGN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+            href="https://drive.google.com/file/d/1B6Xp5Zsex2WEh1itFGLp2bfJe27kCR-V/view?usp=sharing"
+            target="_blank">RESUME</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="menu_m">
+    <a href="index.html" class="logo"><img src="img/logo/rimalogo.svg" alt="" /></a>
+    <div class="menubox_m">
+      <ul>
+        <li>
+          <a class="nav-link" href="index.html">Projects</a>
+        </li>
+        <li>
+          <a class="nav-link" href="https://drive.google.com/file/d/1B6Xp5Zsex2WEh1itFGLp2bfJe27kCR-V/view?usp=sharing"
+            target="_blank">Resume</a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu_btn">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+  </nav>
+  <!-- Navigation End-->
+  <!-- Intro Start -->
+  <section id="ind_about" class="pt-8 pb-6">
+    <div class="container">
+      <div class="row" data-aos="fade-in" data-aos-duration="1400">
+        <h1 class="col-md-12 pb-2">RIMA SUNG, A PRODUCT DESIGNER</h1>
+        <h2 class="col-md-12 pb-2">RIMA SUNG, A PRODUCT DESIGNER</h2>
+        <h3 class="col-md-12 pb-2">RIMA SUNG, A PRODUCT DESIGNER</h3>
+        <h4 class="col-md-12 pb-2">RIMA SUNG, A PRODUCT DESIGNER</h4>
+        <p class="col-md-12 pb-2">RIMA SUNG, A PRODUCT DESIGNER</p>
+        <caption class="col-md-12 pb-2">RIMA SUNG, A PRODUCT DESIGNER</caption>
+      </div>
+    </div>
+  </section>
+  <!-- Intro End -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init();
+    var num = 50; //number of pixels before modifying styles
+    // $(window).bind('scroll', function() { if ($(window).scrollTop() > num) {
+    // $('.menu').addClass('fixed'); } else { $('.menu').removeClass('fixed'); } }); 手機版menu
+    $(".menu_btn").click(function () {
+      $(this).toggleClass("active");
+      $(".menubox_m").toggleClass("open");
+      console.log("click");
+    });
+      // Roche check here
+  </script>
+</body>
+</html>
