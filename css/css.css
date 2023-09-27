@@ -11,18 +11,22 @@ img {
   width: 100%;
   height: 1px;
   margin: 0 15px;
-  border-bottom: 1px solid var(--beige);
+  border-bottom: 1px solid var(--black-pearl);
 }
 
 /* Background Color Start */
+.section_bg_primary {
+  background-color: var(--bg-primary);
+}
+.section_bg_secondary {
+  background-color: var(--bg-secondary);
+}
 .section_bg_purple {
   background-color: var(--purple);
 }
-
-.section_bg_beige {
-  background-color: var(--beige);
+.section_bg_beige{
+  background-color: var(--pink);
 }
-
 .section_bg_beige_darker {
   background-color: var(--beige-darker);
 }
@@ -40,6 +44,10 @@ h1 {
 h2 {
   text-transform: uppercase;
 }
+h5{
+  display: block;
+  margin: 0px;
+}
 .section_bg_beige h1,
 .section_bg_beige h2,
 .section_bg_beige h3,
@@ -48,10 +56,6 @@ h2 {
   color: var(--black);
 }
 
-h5{
-  display: block;
-  margin: 0px;
-}
 .section_bg_yellow p,
 .section_bg_beige p,
 .section_bg_beige li,
@@ -61,9 +65,8 @@ h5{
 .section_bg_purple h2,
 .section_bg_purple h3,
 .section_bg_purple p {
-  color: var(--beige);
+  color: var(--white);
 }
-
 
 .project_hover h3,
 .project_hover p {
@@ -81,7 +84,9 @@ h5{
   -o-transition: 0.6s;
   transition: 0.6s;
 }
-
+i{
+  font-weight: 600;
+}
 /* Font End */
 /* Button Start*/
 .numicon {
@@ -415,7 +420,11 @@ footer .contact img {
   color: var(--beige);
   color: red;
 }
-
+/* Article Start */
+#optimization h5{
+  color: var(--font-secondary);
+}
+/* Article End */
 /* Wvt Start */
 #wvt #research .list {
   padding-left: 20px;
@@ -464,10 +473,10 @@ footer .contact img {
 
 /* Achievement */
 #achievement .subtitle {
-  font-size: 44px;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.2;
-  color: var(--black);
+  color: var(--font-secondary);
 }
 
 #achievement .performance {
@@ -475,6 +484,7 @@ footer .contact img {
 }
 
 .list_yellow li {
+  margin-bottom: 0.5rem;
   position: relative;
 }
 
@@ -554,10 +564,9 @@ footer .contact img {
 /* American Humane End */
 /* Up Study Start */
 #up .quote {
-  margin: 2rem 0 2.2rem;
-  font-size: 1.2rem;
-  padding: 2rem;
-  border-radius: 6px;
+  margin: 1rem 0 1rem;
+  padding: 1.4rem;
+  border-radius: 12px;
 }
 
 #up #Audience .expectation {
@@ -575,19 +584,9 @@ footer .contact img {
 
 /* Up Study End */
 /* Lab Start */
-#lab .result {
-  display: table;
-  margin: 0 auto;
-}
-
-#lab .result li {
-  display: table-cell;
-  text-align: center;
-}
-
 #lab .result img,
 #lab .community img {
-  width: 80%;
+  width: 70%;
 }
 
 /* Lab End */
@@ -729,6 +728,9 @@ footer .contact img {
 @media (min-width: 1200px) {
   .container.article {
     max-width: 960px;
+  }
+  .container-sm,.article {
+    max-width: 740px;
   }
 }
 

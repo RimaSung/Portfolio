@@ -1,24 +1,21 @@
 :root {
-  /* --background: #1b1c2b; */
-  --black: #292929;
-  --gray: #DEDEDE;
-  --black-pearl: #1b1c2b;
-  --bg-primary:#F8F8F8;
-  --purple: #2e36cb;
+  --white:#ffffff;
   --pink: #e57ba6;
-  --beige: #ffffff;
   --beige-darker: #efebdc;
   --yellow: #ffcb30;
+  --purple: #2e36cb;
+  --gray: #DEDEDE;
+  --black-pearl: #1b1c2b;
 
+  --bg-primary:#F8F8F8;
+  --bg-secondary: var(--white);
+
+  --font-secondary:#777777;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --blue: #354c71;
-  --blue-light: #e5e8eb;
-  --brown: #934d00;
-  --red-light: #f0d4d4;
 }
 
 *,
@@ -187,7 +184,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 svg {
@@ -9090,7 +9087,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-  margin-bottom: 2rem !important;
+  margin-bottom: 5rem !important;
 }
 
 .ml-5,
@@ -9240,7 +9237,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 5rem !important;
 }
 
 .pt-6,
@@ -9252,6 +9249,10 @@ button.bg-dark:focus {
 .py-8 {
   padding-top: 8rem !important;
 }
+.pb-8,
+.py-8 {
+  padding-bottom: 8rem !important;
+}
 
 .pr-5,
 .px-5 {
@@ -9260,7 +9261,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-  padding-bottom: 3rem !important;
+  padding-bottom: 5rem !important;
 }
 
 .pb-6,
