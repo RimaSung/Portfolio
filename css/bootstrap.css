@@ -373,7 +373,11 @@ h5,
 .h5 {
   font-size: 1.2rem;
 }
-
+figcaption{
+  margin-top: 0.5rem;
+color: var(--font-secondary);
+font-size: 0.9rem;
+}
 
 .lead {
   font-size: 1.25rem;
