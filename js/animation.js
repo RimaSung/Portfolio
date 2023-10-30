@@ -77,4 +77,7 @@ $(document).ready(function () {
     .addTo(controller);
 
   });
+  lightbox.option({
+    'fitImagesInViewport': true
+  })
 });
