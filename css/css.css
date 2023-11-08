@@ -297,11 +297,35 @@ nav .menubox_m>ul>li:last-child {
     display: block;
   }
 }
+.more{
+  margin: auto auto;
+  width: 30%;
+  line-height: 1rem;
+  color: var(--white);
+  padding: 14px 0;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  display: block;
+  text-align: center;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+
+}
+.more:hover{
+
+  background-color: var(--white);
+  color: var(--bg-purple);
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
 
 /* Index Start*/
 #ind_about {
   letter-spacing: 1px;
-  color: var(--purple);
 }
 
 #ind_about .container {
