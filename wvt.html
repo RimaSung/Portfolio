@@ -173,7 +173,7 @@
         </div>
       </div>
     </section>
-     <!-- Challenge End -->
+    <!-- Challenge End -->
     <!-- Achievement Start -->
     <!-- <section id="achievement" class="section_bg_beige pt-4 pb-4">
       <div class="container article">
@@ -210,7 +210,7 @@
         </div>
       </div>
     </section> -->
-<!-- Achievement End -->
+    <!-- Achievement End -->
     <!-- Process Start -->
     <section id="process" class="section_bg_yellow pt-4 pb-4">
       <div class="container article">
@@ -385,52 +385,35 @@
         </div>
       </div>
     </section>
-    <!-- Solution -->
+    <!-- Solution Start-->
     <section id="solution" class="pt-4 pb-4">
       <div class="container article">
         <div class="row mb-1">
-          <div class="col-md-12 overhiddenBox">
-            <h2>SOLUTIONS</h2>
+          <div class="col-md-12 overhiddenBox text-center">
+            <h2>How do we increase donation intention?</h2>
           </div>
         </div>
         <div class="row justify-content-center align-items-center mb-6">
-          <div class="col-md-6 order2">
-            <h5>Cannot locate pages in tasks</h5>
-            <h3 class="mb-1">Redesigned information architecture</h3>
-            <p class="mb-1">
-              In the original version, the child-sponsorship history section
-              is located independently on an another website. It makes members
-              confused and inconvenient to locate and review. Furthermore, we
-              observed that participants cannot locate a project page when
-              asked to donate either international or domestic project. Those
-              signals gave us insights into the problems from the information
-              architecture.
-            </p>
+          <div class="col-md-7 mb-1">
+            <h5>What'd we do?</h5>
+            <h3 class="mb-1">Streamlined sign in process</h3>
             <p>
-              To redesign information architecture, a
-              <b>
-                <i>Card Sorting Method</i>
-              </b>
-              was conducted. We were able to gather contents in member profile
-              sections into one. To be precise, members can browse project
-              donation history, child-sponsorship history, and personal
-              information in a section. Moreover, we categorized projects into
-              international or domestic. Thus, users can find pages
-              efficiently and intuitively.
+              For users who opt for recurring donations, storing banking information in the membership system is
+              necessary. However, in the current registration process, users are required to input a large amount of
+              non-essential personal information, leading to many users abandoning the process.
             </p>
           </div>
-          <div class="col-md-6 mb-1">
-            <img src="img/wvt/solution3.gif" alt="" />
+          <div class="col-md-5 mb-3">
+            <a href="img/wvt/sign_process.png" data-lightbox="sign_process"><img src="img/wvt/sign_process.png"
+                alt="" /></a>
           </div>
-        </div>
-        <div class="row justify-content-center align-items-center mb-6">
-          <div class="col-md-6">
-            <img src="img/wvt/solution1.png" alt="" />
-          </div>
-          <div class="col-md-6">
-            <h5>Required overwhelming information when signing up.</h5>
-            <h3 class="mb-1">Introduce Social Login</h3>
-            <p>
+          <div class="col-md-12">
+            <h5>How did we streamline sign in process</h5>
+            <h4 class="mb-1">Introduced Social Login</h4>
+            <p>Single sign-on is a common and straightforward method to encourage users to become members of a site.
+              Users can register without the need to provide excessive information. In the future, logging in will be as
+              simple as clicking a sign-in button instead of manually entering their account and password.</p>
+            <!-- <p>Single sign-on 
               According to the
               <a href="https://developers.facebook.com/docs/facebook-login/overview" target="_blank"
                 class="link">research
@@ -440,47 +423,74 @@
               to log in without fulfilling overwhelming information. Users can
               choose which information they share. Hence, attracting visitors
               to become members start by giving users control.
-            </p>
+            </p> -->
+          </div>
+          <div class="col-md-12">
+            <a href="img/wvt/signin_ui.png" data-lightbox="signin_ui"><img src="img/wvt/signin_ui.png" alt="" /></a>
           </div>
         </div>
         <div class="row justify-content-center align-items-center mb-6">
-          <div class="col-md-6 order2">
-            <h5>Required overwhelming information when signing up.</h5>
-            <h3 class="mb-1">Save member information automatically</h3>
-            <p class="mb-1">
-              For the purpose of reducing users' pressure when signing up, we
-              introduced social login. Nevertheless, member information is
-              still required for record and analysis. To solve this problem,
-              we established a feature to save member information
-              automatically when in the donation process. Thus, it can release
-              users' pressure to become members.
+          <div class="col-md-7 mb-1">
+            <h5>What'd we do?</h5>
+            <h3 class="mb-1">Simplified checkout process</h3>
+            <p>Even though we streamlined the sign-up process, allowing users to make donations without filling in
+              excessive information, some details are still required for recording and analysis. The original design
+              separates user data in the donation process and profile page, which makes data inconsistent and requires
+              users to manually fill in personal information in every donation.
             </p>
-            <p>
-              Besides, we noticed that some users expected to donate by using
+          </div>
+          <div class="col-md-5 mb-1">
+            <a href="img/wvt/checkout_process.png" data-lightbox="checkout_process"><img
+                src="img/wvt/checkout_process.png" alt="" /></a>
+          </div>
+          <div class="col-md-12 mb-1">
+            <h5>How did we simplify checkout process</h5>
+            <h4 class="mb-1">Automatically save member information</h4>
+            <p>For first-time donors, it is necessary to provide personal information, which will be automatically
+              stored in our database and retrieved during the subsequent donation process. Users can choose not to
+              update information based on their preference.</p>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a href="img/wvt/automatically.png" data-lightbox="automatically"><img src="img/wvt/automatically.png"
+                alt="" /></a>
+          </div>
+          <div class="col-md-12 mb-1">
+            <h5>How did we simplify checkout process</h5>
+            <h4 class="mb-1">Allows users to manage donors info. directly</h4>
+            <p> Besides, we noticed that some users expected to donate by using
               others' names. Therefore, we invented a feature called "Donor
               Book". Users are able to edit other donor information as they
               want and automatically fill in/remove/add/revise in the donation
-              process or member profile pages.
-            </p>
+              process or member profile pages.</p>
           </div>
-          <div class="col-md-6">
-            <img src="img/wvt/solution4.gif" alt="" />
+          <div class="col-md-12">
+            <a href="img/wvt/donor.png" data-lightbox="donor"><img src="img/wvt/donor.png"
+                alt="" /></a>
           </div>
         </div>
         <div class="row justify-content-center align-items-center mb-6">
-          <div class="col-md-6 mb-1">
-            <img src="img/wvt/solution4.gif" alt="" />
-          </div>
-          <div class="col-md-6">
-            <h5>Limited control in the donation process</h5>
-            <h3 class="mb-1">Adjustable donation items</h3>
+          <div class="col-md-7 mb-1">
+            <h5>What'd we do?</h5>
+            <h3 class="mb-1">Improved payment experience</h3>
             <p>
-              Users were able to remove, add, and replace a donation project
-              or adjust donation frequency on the cart page.
+              The system currently offers a limited option of payment methods for users within the existing payment flow. This necessitates users to mail a credit card authorization form to the World Vision office. This not only creates additional, unnecessary tasks for users but also increases the workload for the financial unit personnel at World Vision.
             </p>
           </div>
+          <div class="col-md-5 mb-3">
+            <a href="img/wvt/payment.png" data-lightbox="payment"><img src="img/wvt/payment.png"
+                alt="" /></a>
+          </div>
+          <div class="col-md-12 mb-1">
+            <h5>How did we improve payment experience</h5>
+            <h4 class="mb-1">Make a payment at convenience stores</h4>
+            <p>Going back to the main point, one big difference in how Taiwanese people handle payments is their preference for using convenience stores. Besides popular online methods, they find it easy to pay bills at these stores. Research shows that, on average, a Taiwanese person goes to a convenience store every two days. These stores are in really convenient spots, like near train stations, bus stops, and busy streets. People use it not just for buying food but also for paying bills and getting help from the staff, like taking care of trash. I'd say convenience stores in Taiwan are like magic—they can handle almost anything you need.</p>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a href="img/wvt/payment2.png" data-lightbox="payment"><img src="img/wvt/payment2.png"
+                alt="" /></a>
+          </div>
         </div>
-        <div class="row justify-content-center align-items-center">
+        <!-- <div class="row justify-content-center align-items-center">
           <div class="col-md-6 order2">
             <h5>Overwhelming offline jobs due to lacking Data export/import
               module on CRM system</h5>
@@ -496,27 +506,55 @@
           <div class="col-md-6 image">
             <img src="img/wvt/solution2.png" alt="" />
           </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- Solution End-->
+    <!-- Design System Start -->
+    <section id="design_system" class="section_bg_secondary pt-4 pb-4">
+      <div class="container article">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <div class="mb-1 overhiddenBox">
+              <h2>DESIGN SYSTEM</h2>
+            </div>
+            <p>The vast scale of the project mandated the arrangement of a multitude of components within the system. To
+              promote uniformity across all applications, each component featured distinct variations tailored for
+              desktop, tablet, and mobile devices as needed.
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 mb-5">
+            <a href="img/wvt/text style.png" data-lightbox="design system"><img src="img/wvt/text style.png"
+                alt="" /></a>
+          </div>
+          <div class="col-md-4 mb-5">
+            <a href="img/wvt/color style.png" data-lightbox="design system"><img src="img/wvt/color style.png"
+                alt="" /></a>
+          </div>
+          <div class="col-md-4 mb-5">
+            <a href="img/wvt/button style.png" data-lightbox="design system"><img src="img/wvt/button style.png"
+                alt="" /></a>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
     <!-- Review -->
-    <section id="review" class="section_bg_secondary pt-4 pb-4">
-      <div class="container article">
+    <!-- <section id="review" class="section_bg_secondary pt-4 pb-4">
+      <div class="container-fluid">
         <div class="col-md-12 mb-1">
           <h2>DESIGN REVIEW</h2>
-        </div>
-        <div class="col-md-12 mb-5">
-          <img src="img/wvt/review1.png" alt="" />
-        </div>
-        <div class="col-md-12 mb-5">
-          <img src="img/wvt/review2.png" alt="" />
         </div>
         <div class="col-md-12 mb-5">
           <img src="img/wvt/review3.png" alt="" />
         </div>
       </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <!--footer-->
   <footer>
