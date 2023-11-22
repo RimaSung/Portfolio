@@ -297,13 +297,12 @@ nav .menubox_m>ul>li:last-child {
     display: block;
   }
 }
-.more{
+.button{
+  text-transform: uppercase;
   margin: auto auto;
   width: 30%;
   line-height: 1rem;
-  color: var(--white);
   padding: 14px 0;
-  border: 1px solid #ffffff;
   border-radius: 30px;
   display: block;
   text-align: center;
@@ -311,18 +310,35 @@ nav .menubox_m>ul>li:last-child {
   -moz-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
-
 }
-.more:hover{
-
-  background-color: var(--white);
-  color: var(--bg-purple);
+.button:hover{
   -webkit-transition: 0.6s;
   -moz-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
 }
-
+#index .button{
+  color: var(--white);
+  border: 1px solid #ffffff;
+}
+#index .button:hover{
+  background-color: var(--white);
+  color: var(--purple);
+}
+.section_bg_secondary .button, #wvt .button{
+  color: var(--black-pearl);
+  border: 1px solid var(--black-pearl);
+}
+.section_bg_secondary .button:hover, #wvt .button:hover{
+  color:var(--white);
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+}
+#wvt #challenge{
+  width: 100%;
+padding: 2rem;
+border-radius: 10px;
+}
 /* Index Start*/
 #ind_about {
   letter-spacing: 1px;
@@ -467,9 +483,9 @@ footer .contact img {
   font-style: italic;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom: 1px solid var(--pink);
+  border-bottom: 1px solid var(--purple);
   font-weight: 600;
-  color: var(--pink);
+  color: var(--purple);
 }
 
 /*Animation*/
