@@ -1,16 +1,23 @@
 :root {
-  --white:#ffffff;
   --pink: #e57ba6;
   --beige-darker: #efebdc;
   --yellow: #ffcb30;
   --purple: #2e36cb;
-  --gray: #DEDEDE;
+
+  --white: #ffffff;
+  --gray10: #F8F8F8;
+  --gray20: #DEDEDE;
+  --gray30: #727273;
+  --gray50: #3D3E40;
+  --gray80: #444444;
   --black-pearl: #1b1c2b;
 
-  --bg-primary:#F8F8F8;
+  --bg-primary: var(--gray10);
   --bg-secondary: var(--white);
 
-  --font-secondary:#777777;
+  --font-primary: var(--gray80);
+  --font-secondary: var(--gray30);
+
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -48,13 +55,12 @@ body {
   margin: 0;
   font-family: "proxima-nova", "Segoe UI", Roboto, "Helvetica Neue", Arial,
     "Noto Sans", sans-serif, "Apple Color Emoji";
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
   line-height: 1.6;
   text-align: left;
   letter-spacing: 0.4px;
-  background-color:  var(--bg-primary);
-  color: var(--black-pearl);
+  background-color: var(--bg-primary);
+  color: var(--font-primary);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -70,7 +76,8 @@ hr {
 h1,
 h2,
 h3,
-h4{
+h4 {
+  font-weight: 400;
   margin: 0;
   margin: 0rem;
 }
@@ -146,7 +153,7 @@ sup {
 }
 
 a {
-  color: var(--black-pearl);
+  color: var(--font-primary);
   text-decoration: none;
   background-color: transparent;
 }
@@ -361,22 +368,29 @@ h3,
 .h3 {
   font-size: 2rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 h4,
 .h4 {
   font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 h5,
 .h5 {
   font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--font-secondary);
+  font-weight: 300;
+  text-transform: uppercase;
 }
-figcaption{
+
+figcaption {
   margin-top: 0.5rem;
-color: var(--font-secondary);
-font-size: 0.9rem;
+  color: var(--font-secondary);
+  font-size: 0.9rem;
 }
 
 .lead {
@@ -9253,6 +9267,7 @@ button.bg-dark:focus {
 .py-8 {
   padding-top: 8rem !important;
 }
+
 .pb-8,
 .py-8 {
   padding-bottom: 8rem !important;

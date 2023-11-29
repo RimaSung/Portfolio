@@ -25,7 +25,7 @@ $(document).ready(function () {
     .addTo(controller);
 
   //make timeline
-  $('.article').each(function () {
+  $('.overhiddenBox').each(function () {
     var titleInElement = $(this).find('h2');
 
     var animation2 = new TimelineMax();

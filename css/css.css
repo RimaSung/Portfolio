@@ -21,6 +21,9 @@ img {
 .section_bg_secondary {
   background-color: var(--bg-secondary);
 }
+.section_bg_tertiary {
+  background-color: var(--bg-tertiary);
+}
 .section_bg_purple {
   background-color: var(--purple);
 }
@@ -29,10 +32,6 @@ img {
 }
 .section_bg_beige_darker {
   background-color: var(--beige-darker);
-}
-
-.section_bg_yellow {
-  background-color: var(--yellow);
 }
 
 /* Background Color End*/
@@ -464,18 +463,61 @@ footer .contact img {
 #optimization h5{
   color: var(--font-secondary);
 }
+#wvt h2{
+  margin-bottom: 2rem;
+}
+#wvt h5{
+  margin-bottom: 0.4rem;
+}
 /* Article End */
 /* Wvt Start */
+#wvt .card{
+    padding: 2rem;
+    border-radius: 12px;
+    border: none;
+    display: block;
+  }
+#wvt #achievement .card{
+background-color: var(--bg-primary);
+color: var(--font-primary);
+}
+#wvt #achievement .icon{
+  margin: 1.5rem;
+}
+#wvt #achievement .icon img{
+  width: 80px;
+  height: 80px;
+}
+#wvt #challenge .card .num{
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  position: relative;
+}
+#wvt #challenge .card .num span{
+  font-size: 1.8rem;
+  position: absolute;
+  top: 6px;
+  left: 32px;
+}
 #wvt #research .list {
   padding-left: 20px;
   list-style: disc;
 }
+#wvt .img60 img{
+  width: 60%;
+}
+#wvt .design_container{
+  background-color: var(--bg-primary);
+  padding: 2rem 1.4rem;
+  border-radius: 20px;
+}
 
-#wvt .painpoint {
+/* #wvt .painpoint {
   padding: 1rem 1.2rem;
   border-radius: 6px;
   color: var(--black);
-}
+} */
 
 /* Wvt End */
 .link,
