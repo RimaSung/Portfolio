@@ -88,7 +88,7 @@ i{
 }
 /* Font End */
 /* Button Start*/
-.numicon {
+.numicon img{
   width: 32px;
 }
 
@@ -328,6 +328,10 @@ nav .menubox_m>ul>li:last-child {
   color: var(--black-pearl);
   border: 1px solid var(--black-pearl);
 }
+#wvt .button{
+  color: var(--white);
+  border: 1px solid var(--white);
+}
 .section_bg_secondary .button:hover, #wvt .button:hover{
   color:var(--white);
   background-color: var(--purple);
@@ -337,6 +341,9 @@ nav .menubox_m>ul>li:last-child {
   width: 100%;
 padding: 2rem;
 border-radius: 10px;
+}
+.text-white{
+  color: var(--white);
 }
 /* Index Start*/
 #ind_about {
@@ -463,30 +470,59 @@ footer .contact img {
 #optimization h5{
   color: var(--font-secondary);
 }
-#wvt h2{
+#wvt h1, #am h1, #fc h1, #up h1{
+  margin-bottom: 2rem;
+}
+#wvt h2, #am h2, #fc h2, #up h2, #index h2{
   margin-bottom: 2rem;
 }
 #wvt h5{
   margin-bottom: 0.4rem;
 }
+.card{
+  padding: 2rem;
+  border-radius: 12px;
+  border: none;
+  display: block;
+}
 /* Article End */
 /* Wvt Start */
-#wvt .card{
-    padding: 2rem;
-    border-radius: 12px;
-    border: none;
-    display: block;
-  }
+#wvt #achievement{
+  position: relative;
+}
+#wvt #achievement::before{ 
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+#wvt #achievement::after{ 
+  content: "";
+  background-image: url(../img/wvt/test.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -2;
+}
 #wvt #achievement .card{
-background-color: var(--bg-primary);
+background-color: rgba(255,255,255,0.85);
 color: var(--font-primary);
 }
 #wvt #achievement .icon{
   margin: 1.5rem;
 }
 #wvt #achievement .icon img{
-  width: 80px;
-  height: 80px;
+  width: 60%;
+  height: 60%;
 }
 #wvt #challenge .card .num{
   font-size: 3rem;
@@ -543,16 +579,6 @@ color: var(--font-primary);
   opacity: 1;
 }
 
-/* Goals */
-#goal .numicon {
-  display: inline-block;
-  margin-right: 8px;
-}
-
-#goal p {
-  display: inline-block;
-}
-
 /* Achievement */
 #achievement .subtitle {
   font-size: 3rem;
@@ -589,16 +615,27 @@ color: var(--font-primary);
 
 /* UrCosme End */
 /* American Humane Start */
-#am #analysis .article {
-  background-image: url(../img/am/research1.png);
-  background-repeat: no-repeat;
-  padding-bottom: 6.2rem;
-  background-size: 60%;
-  background-position: bottom right;
+#am #achievement .card{
+  background-color: var(--bg-primary);
+  color: var(--font-primary);
+  }
+#am #achievement .card .num{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+#am #achievement .card .num span{
+    font-size: 1.8rem;
+    display: inline;
+    padding-left: 6px;
+}
+#am #overview .numicon {
+  display: inline-block;
+  margin-right: 8px;
 }
 
-#am .analysis_img {
-  display: none;
+#am #overview p {
+  display: inline-block;
 }
 
 #am #result li {
