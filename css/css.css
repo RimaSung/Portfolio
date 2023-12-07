@@ -470,10 +470,10 @@ footer .contact img {
 #optimization h5{
   color: var(--font-secondary);
 }
-#wvt h1, #am h1, #fc h1, #up h1{
+#wvt h1, #am h1, #fc h1, #up h1, #ur h1{
   margin-bottom: 2rem;
 }
-#wvt h2, #am h2, #fc h2, #up h2, #index h2{
+#wvt h2, #am h2, #fc h2, #up h2, #index h2, #ur h2{
   margin-bottom: 2rem;
 }
 #wvt h5{
@@ -612,7 +612,51 @@ color: var(--font-primary);
 }
 
 /* UrCosme Start */
-
+#ur #achievement{
+  position: relative;
+  color: var(--white)
+}
+#ur #achievement::before{ 
+  content: "";
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+#ur #achievement::after{ 
+  content: "";
+  background-image: url(../img/ur/cosme_store.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -2;
+}
+#ur #achievement .icon{
+  width: 30%;
+}
+#ur #achievement .card{
+  background-color: rgba(255,255,255,0.85);
+  color: var(--font-primary);
+  height: 100%;
+  }
+#ur #achievement .card .num{
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+#ur #achievement .card .num span{
+  font-size: 1.8rem;
+  display: inline;
+  padding-left: 6px;
+}
 /* UrCosme End */
 /* American Humane Start */
 #am #achievement .card{
