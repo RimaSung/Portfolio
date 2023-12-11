@@ -470,15 +470,6 @@ footer .contact img {
 #optimization h5{
   color: var(--font-secondary);
 }
-#wvt h1, #am h1, #fc h1, #up h1, #ur h1{
-  margin-bottom: 2rem;
-}
-#wvt h2, #am h2, #fc h2, #up h2, #index h2, #ur h2{
-  margin-bottom: 2rem;
-}
-#wvt h5{
-  margin-bottom: 0.4rem;
-}
 .card{
   padding: 2rem;
   border-radius: 12px;
