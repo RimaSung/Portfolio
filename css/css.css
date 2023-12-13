@@ -39,7 +39,7 @@ img {
 }
 /* Background Color End*/
 /* Section Container Start */
-#wvt .section_container, #lab .section_container {
+#index .section_container, #wvt .section_container, #lab .section_container {
 padding-top: 6rem;
 padding-bottom: 6rem;
 }
@@ -325,13 +325,13 @@ nav .menubox_m>ul>li:last-child {
   -o-transition: 0.6s;
   transition: 0.6s;
 }
-#index .button{
-  color: var(--white);
-  border: 1px solid #ffffff;
-}
 #index .button:hover{
-  background-color: var(--white);
-  color: var(--purple);
+  background-color: var(--purple);
+  color: var(--white);
+}
+.section_bg_primary .button{
+  color: var(--black-pearl);
+  border: 1px solid var(--black-pearl);
 }
 .section_bg_secondary .button, #wvt .button{
   color: var(--black-pearl);
@@ -537,7 +537,6 @@ color: var(--font-primary);
   width: 60%;
 }
 #wvt .design_container{
-  background-color: var(--bg-primary);
   padding: 2rem 1.4rem;
   border-radius: 20px;
 }
