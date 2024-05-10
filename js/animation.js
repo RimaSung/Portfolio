@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  // Scroll Start
+  $(".anchor a").click(function () {
+    var href = $(this).attr("href");
+    var pos = $(href).offset().top - 120;
+    $("html,body").animate({
+        scrollTop: pos
+    }, 800);
+    return false;
+});
+// Scroll End
   //make timeline
   var bannerIn = new TimelineMax();
 
