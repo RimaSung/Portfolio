@@ -39,7 +39,7 @@ img {
 }
 /* Background Color End*/
 /* Section Container Start */
-#index .section_container, #wvt .section_container, #lab .section_container, #up .section_container  {
+#index .section_container, #wvt .section_container, #lab .section_container, #up .section_container, #roche .section_container  {
 padding-top: 6rem;
 padding-bottom: 6rem;
 }
@@ -496,6 +496,17 @@ footer .contact img {
   border: none;
   display: block;
 }
+/* Roche Start */
+#roche{
+
+}
+#roche #goal .numicon p{
+  display: inline;
+}
+#roche #goal .numicon img{
+  margin-right:2px;
+}
+/* Roche End */
 /* Wvt Start */
 #wvt #achievement{
   position: relative;
